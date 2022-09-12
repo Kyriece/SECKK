@@ -1,8 +1,58 @@
-<!DOCTYPE html>
-    <head>
-        "Hello World"
-    </head>
-    <body>
-
-    </body>
-</html>
+<HTML>
+<TITLE>Lab 1 test</TITLE>
+<HEAD>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 400px;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr {
+    background-color: #dddddd;
+}
+</style>
+</HEAD>
+<BODY>
+<h2>E-commerce Order Form</h2>
+<FORM ACTION="http://www.rebol.com/cgi-bin/test-cgi.cgi">
+<br/>
+<table>
+  <tr>
+    <th>Order Item</th>
+    <td><INPUT TYPE="text" NAME="Item" SIZE="20"></td>
+  </tr>
+  <tr>
+    <th>Quantity</th>
+    <td><INPUT TYPE="number" NAME="quantity" SIZE="20"></td>
+  </tr>
+  <tr>
+    <th>Street: </th>
+    <td><INPUT TYPE="text" NAME="Street" SIZE="20"></td>
+  </tr>
+  <tr>
+    <th>Unit/Apartment: </th>
+    <td><INPUT TYPE="text" NAME="Unit/Apartment" SIZE="20"></td>
+  </tr>
+  <tr>
+    <th>City: </th>
+    <td><INPUT TYPE="text" NAME="City" SIZE="20"></td>
+  </tr>
+  <tr>
+    <th>Postcode: </th>
+    <td><INPUT TYPE="text" NAME="Postcode" SIZE="20"></td>
+  </tr>
+  <tr>
+    <th>Credit Card No.</th>
+    <td><INPUT TYPE="text" NAME="card" SIZE="20"></td>
+  </tr>
+</table>
+<br/><br/>
+<INPUT TYPE="SUBMIT" VALUE="Submit the order form">
+</FORM>
+</BODY>
+</HTML>
