@@ -15,7 +15,7 @@ function closeDB($db){
     $db->close();
 }
 
-function getCatalog($dbReturned){
+function getAllCatalog($dbReturned){
     $db = $dbReturned;
 
     if(!$db) {
@@ -26,6 +26,24 @@ function getCatalog($dbReturned){
 
     $sql =<<<EOF
       SELECT * from CATALOG;
+    EOF;
+
+    $ret = $db->query($sql);
+
+    return $ret;
+}
+
+function getAllCustomer($dbReturned){
+    $db = $dbReturned;
+
+    if(!$db) {
+        echo $db->lastErrorMsg();
+    } else {
+        echo "Opened database successfully\n";
+    }
+
+    $sql =<<<EOF
+      SELECT * from CUSTOMER;
     EOF;
 
     $ret = $db->query($sql);

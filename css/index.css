@@ -1,0 +1,35 @@
+.topBar{
+    position:fixed;
+    width:100%;
+    z-index:1
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0px;
+  background-color:#5d3735;
+  padding: 0px;
+  margin-top:-8px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.grid-container > div:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.top_button{
+    text-decoration: none
+    
+}
+
+a{
+    color:white
+}
