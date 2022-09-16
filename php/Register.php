@@ -6,13 +6,11 @@ include('Data_Access.php');
     <body>
         <?php
         //Receive user input from clint side
-        //$user_input = $_POST[];
+        $user_input = $_POST['username'];
         //$user_password = $POST['userPassword'];
 
-        //echo $user_input;
-        foreach ($_POST["usercredentials"] as $usercredential) {
-            echo "$usercredential<br>";
-          }
+        echo $user_input;
+        
         ?>
     </body>
 </html>
