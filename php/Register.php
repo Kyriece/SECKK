@@ -9,7 +9,10 @@ include('Data_Access.php');
         $user_name = $_POST['username'];
         $user_password = $_POST['userPassword'];
 
-        $returnPass;
+        echo $user_name;
+        echo $user_password;
+
+        $returnPass = "";
         $db = openDB();
         $ret = getCustomerPassword($db, $user_name);
         while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
