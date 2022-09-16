@@ -3,7 +3,6 @@ include('Data_Access.php');
 ?>
 <html>
     <body>
-        <h1>Lab 7 Demo 2: PHP DES test</h1>
         <?php
             $db = openDB();
             $ret = getAllCatalog($db);
