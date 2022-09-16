@@ -1,1 +1,69 @@
-Login
+<!DOCTYPE html>
+    <head>
+        <title>Expresso Login</title>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Exppresso, an e-commerce site that sells coffee beans">
+        <meta name = "author" content = "Kai Run Leong (S3862092), Kyriece(enter student number)">
+        <meta name = "keywords" content = "Coffee beans, e-commerce, Expresso">
+        <meta name = "viewport" content = "width=device_width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <style>
+        body,html{
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class = div-logo>
+              <a href = "home.html">
+                <img src="../images/icons8-coffee-beans-96.png" alt="Free logo from icons8.com">
+              </a>
+            </div>
+            <div class = login-button-div>
+              <a href = "Login.html" class = login-button>Login</a>
+            </div>
+            <div class = register-button-div>
+              <a href = "Register.html" class = login-button>Register</a>
+            </div>
+      
+          </div>
+          <div class = "grid-container">
+            <div>
+              <a href = "home.html" class = "top_button">Home</a>
+            </div>
+            <div>
+              <a href = "About.html" class = "top_button">About</a>
+            </div>
+            <div>
+              <a href = "Products.html" class = "top_button">Product</a>
+            </div>
+          </div>
+        
+        <!--NAVIGATION BAR-->
+
+        <h2>Login</h2>
+
+        <form action="../php/Register.php" method="POST">
+            Enter username: <input type="text" name="username" id="username">
+            <br/><br/>
+            Enter password: <input type="text" name="userPassword" id="userPassword">
+            <br/><br/>
+            <!--
+            <button type="submit" onclick="hash()">Submit</button>
+            -->
+        </form>
+
+        <!-- Worry about hashing the password later-->
+        <script src="../javascript/sha256.js"></script>
+        <script type="text/javascript">
+            function hash() {
+            var password = document.getElementById('userPassword').value;
+            var hashed_password = SHA256.hash(password);
+            document.getElementById("userPassword").value = hashed_password;
+            }
+        </script>
+    </body>
+</html>
