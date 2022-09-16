@@ -63,3 +63,7 @@
 .login-button{
   text-decoration: none;
 }
+
+.loginFailedTxt{
+  padding: 10px;
+}
