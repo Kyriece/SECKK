@@ -5,10 +5,14 @@ include('Data_Access.php');
 <html>
     <body>
         <?php
-        $user_input = $_POST['username'];
+        $user_name = $_POST['username'];
         $user_password = $_POST['userPassword'];
-        echo $user_input;
-        echo $user_password;
-        ?>
+        $db = openDB();
+        $ret = ggetCustomerPassword($db, $user_name);
+        $userPass = "";
+        while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
+            $userPass = $row['userPassword'];
+        }
+        echo "The password is: ".$user_password;
     </body>
 </html>
