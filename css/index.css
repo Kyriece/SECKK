@@ -10,9 +10,17 @@
   gap: 0px;
   background-color:#5d3735;
   padding: 0px;
-  margin-top:50px;
+  margin-top:0px;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+.div-logo{
+  display: block;
+  margin-top:-10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8%;
 }
 
 .grid-container > div {
@@ -26,10 +34,32 @@
 }
 
 .top_button{
-    text-decoration: none
-    
+    text-decoration: none;
+    color:white;
 }
 
-a{
-    color:white
+.register-button-div{
+  line-height: 12px;
+  width: 18px;
+  font-size: 15pt;
+  margin-top: 35px;
+  margin-right: 65px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.login-button-div{
+  line-height: 12px;
+  width: 18px;
+  font-size: 15pt;
+  margin-top: 10px;
+  margin-right: 64px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.login-button{
+  text-decoration: none;
 }
