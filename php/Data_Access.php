@@ -55,7 +55,7 @@ function getCustomerPassword($dbReturned, $username){
     $db = $dbReturned;
 
     $sql =<<<EOF
-      SELECT userPassword FROM CUSTOMER WHERE user = "$username";
+      SELECT userPassword FROM CUSTOMER WHERE userName = "$username";
     EOF;
 
     $ret = $db->query($sql);
