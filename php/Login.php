@@ -14,5 +14,6 @@ include('Data_Access.php');
             $userPass = $row['userPassword'];
         }
         echo "The password is: ".$user_password;
+        ?>
     </body>
 </html>
