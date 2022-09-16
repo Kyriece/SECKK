@@ -11,7 +11,7 @@ include('Data_Access.php');
 
         $returnPass;
         $db = openDB();
-        $ret = getCustomerPassword($dbReturned, $user_name);
+        $ret = getCustomerPassword($db, $user_name);
         while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
             $returnPass = $row['userName'];
         }
