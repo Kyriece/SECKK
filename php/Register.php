@@ -9,7 +9,7 @@ include('Data_Access.php');
         //$user_input = $_POST['username'];
         //$user_password = $_POST['userPassword'];
 
-        echo $_POST[$user_input];
+        echo $_POST['$username'];
        // echo $user_password;
         
         ?>
