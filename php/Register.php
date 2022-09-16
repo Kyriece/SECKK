@@ -11,7 +11,7 @@ include('Data_Access.php');
 
         echo $user_name;
         echo $user_password;
-
+/*
         $returnPass = "";
         $db = openDB();
         $ret = getCustomerPassword($db, $user_name);
@@ -20,7 +20,7 @@ include('Data_Access.php');
         }
 
         echo $returnPass;
-        closeDB($db);
+        closeDB($db);*/
         ?>
     </body>
 </html>
