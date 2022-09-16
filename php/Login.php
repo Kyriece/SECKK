@@ -13,7 +13,7 @@ include('Data_Access.php');
         while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
             $userPass = $row['userPassword'];
         }
-        echo "The password is: ".$user_password;
+        echo "The password is: ".$userPass;
         ?>
     </body>
 </html>
