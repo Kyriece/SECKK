@@ -6,10 +6,18 @@ include('Data_Access.php');
     <body>
         <?php
         //Receive user input from clint side
-        $user_input = $_POST['username'];
-        $user_password = $POST['userPassword'];
+        $user_name = $_POST['username'];
+        $user_password = $_POST['userPassword'];
 
-        echo $user_password;
+        $returnPass;
+
+        $ret = getCustomerPassword($dbReturned, $user_name);
+        while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
+            $returnPass = $row['userName'];
+        }
+
+        echo $returnPass;
+        
         ?>
     </body>
 </html>

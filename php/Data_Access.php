@@ -51,4 +51,16 @@ function getAllCustomer($dbReturned){
     return $ret;
 }
 
+function getCustomerPassword($dbReturned, $username){
+    $db = $dbReturned;
+
+    $sql =<<<EOF
+      SELECT userPassword FROM CUSTOMER WHERE user = "$username";
+    EOF;
+
+    $ret = $db->query($sql);
+
+    return $ret;
+}
+
 ?>
