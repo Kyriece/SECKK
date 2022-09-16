@@ -7,7 +7,7 @@ include('Data_Access.php');
         <?php
         //Receive user input from clint side
         $user_input = $_REQUEST['username'];
-        //$user_password = $POST['userPassword'];
+        $user_password = $REQUEST['userPassword'];
 
         echo $user_input;
         ?>
