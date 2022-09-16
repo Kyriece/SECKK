@@ -3,6 +3,7 @@
         <?php
         //Receive user input from clint side
         $user_input = $_POST['input'];
+        
         //open the database file named "database.txt"
         $file = fopen("../database/database.txt","a");
         //insert $user_input into the database.txt
