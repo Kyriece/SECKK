@@ -43,19 +43,24 @@
           </div>
         
         <!--NAVIGATION BAR-->
+        
+        <section class="login">
+          <div class="box-container">
+          <h2 style="text-align: center;">Login</h2>
 
-        <h2>Login</h2>
+            <form action="../php/Login.php" method="post">
+              Enter username: <input type="text" name="username" id="username">
+              <br/><br/>
+              Enter password: <input type="text" name="userPassword" id="userPassword">
+              <br/><br/>
+              <input type="submit" value="Submit">
+              <!--<button type="submit" onclick="hash()">Submit</button>-->
+            </form>
+          </div>
 
-        <form action="../php/Login.php" method="post">
-            Enter username: <input type="text" name="username" id="username">
-            <br/><br/>
-            Enter password: <input type="text" name="userPassword" id="userPassword">
-            <br/><br/>
-            <input type="submit" value="Submit">
-            <!--
-            <button type="submit" onclick="hash()">Submit</button>
-            -->
-        </form>
+        
+        </section>
+        
 
         <!-- Worry about hashing the password later-->
         <script src="../javascript/sha256.js"></script>

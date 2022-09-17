@@ -80,14 +80,20 @@
   height: 30vw;
 }
 
+.home p{
+  font-size: 30px;
+}
+
 .home .centered{
-  background-color: #0984e3;
-  padding: 2rem;
+  background-color: #5d3735;
+  opacity: 0.95;
+  padding: 3rem;
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
+  color: white;
 }
 
 .catalogue {
@@ -137,3 +143,104 @@
   max-height: inherit;
   object-fit: cover;
 }
+
+.login .box-container{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.card-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.product-content{
+  padding: 2rem 1rem;
+}
+
+.product-content p{
+  font-size: 25px;
+}
+
+.product-title{
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: #12263a;
+  margin: 1rem 0;
+}
+
+.product-price{
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.product-price span{
+  font-weight: 400;
+}
+.product-detail h2{
+  text-transform: capitalize;
+  color: #12263a;
+  padding-bottom: 0.6rem;
+}
+.product-detail p{
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  opacity: 0.8;
+}
+.product-detail ul{
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.purchase-info{
+  margin: 1.5rem 0;
+}
+.purchase-info input,
+.purchase-info .btn{
+  border: 1.5px solid #ddd;
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  outline: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.purchase-info input{
+  width: 60px;
+}
+
+.purchase-info .btn{
+  cursor: pointer;
+  color: #fff;
+}
+
+.purchase-info .btn:last-of-type{
+  background: #f64749;
+}
+.purchase-info .btn:hover{
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 992px){
+  .card{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.5rem;
+  }
+  .card-wrapper{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .product-imgs{
+      display: flex;
+      justify-content: center;
+  }
+  .product-content{
+      padding-top: 0;
+  }
