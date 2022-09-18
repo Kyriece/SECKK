@@ -225,6 +225,13 @@
   opacity: 0.9;
 }
 
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #5d3735;
+  color: white;
+}
+
 @media screen and (min-width: 992px){
   .card{
       display: grid;
@@ -244,3 +251,5 @@
   .product-content{
       padding-top: 0;
   }
+
+  
