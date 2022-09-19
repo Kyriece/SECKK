@@ -63,8 +63,7 @@ function getCustomerPassword($dbReturned, $username){
     return $ret;
 }
 
-function createNewUser($dbReturned, $user_name, $user_password, $user_email, 
-    $user_first, $user_last, $user_phone){
+function createNewUser($dbReturned, $user_name, $user_password, $user_email, $user_first, $user_last, $user_phone){
     //$db = $dbReturned;
     //$db = new SQLite3('../SECKK.db');
     $db = new SQLite3('../coffeedb.db')
