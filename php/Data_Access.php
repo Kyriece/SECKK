@@ -66,7 +66,7 @@ function getCustomerPassword($dbReturned, $username){
 function createNewUser($dbReturned, $user_name, $user_password, $user_email, 
     $user_first, $user_last, $user_phone){
     //$db = $dbReturned;
-    $db = $dbReturned;
+    $db = new SQLite3('../SECKK.db');
     
     //can use query to update
     //see this https://www.w3schools.com/php/php_mysql_insert.asp
