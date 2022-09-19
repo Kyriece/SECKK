@@ -66,17 +66,16 @@ function getCustomerPassword($dbReturned, $username){
 function createNewUser($dbReturned, $user_name, $user_password, $user_email, 
     $user_first, $user_last, $user_phone){
     //$db = $dbReturned;
-    unlink('../SECKK.db');
     $db = new SQLite3('../SECKK.db');
     
     //can use query to update
     //see this https://www.w3schools.com/php/php_mysql_insert.asp
     $sql = <<<EOF
             INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber) 
-            VALUES("$user_name", "$user_email', "$user_first", "$user_last", "$user_password", "$user_phone");
+            VALUES ("$user_name", "$user_email', "$user_first", "$user_last", "$user_password", "$user_phone");
             EOF;
         
-    $db->exec($sql);
+    $db->exec("INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber) VALUES ('$user_name', '$user_email', '$user_first', '$user_last', '$user_password', '$user_phone')");
 }
 
 ?>
