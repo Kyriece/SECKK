@@ -23,6 +23,7 @@ include('Data_Access.php');
         }
 
         echo "The password is: ".$userPass;
+        closeDB($db);
         ?>
     </body>
 </html>
