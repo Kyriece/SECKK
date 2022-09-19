@@ -66,7 +66,7 @@ function getCustomerPassword($dbReturned, $username){
 function createNewUser($dbReturned, $user_name, $user_password, $user_email, 
     $user_first, $user_last, $user_phone){
     //$db = $dbReturned;
-    $conn = new mysqli('../SECKK.db');
+    $conn = new mysqli('SECKK.db');
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
