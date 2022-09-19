@@ -63,4 +63,16 @@ function getCustomerPassword($dbReturned, $username){
     return $ret;
 }
 
+function createNewUser($dbReturned){
+    $db = $dbReturned;
+
+    //can use query to update
+    //see this https://www.w3schools.com/php/php_mysql_insert.asp
+    $sql = <<<EOF
+        SELECT userPassword FROM CUSTOMER WHERE userName = "$username";
+    EOF;
+
+    $ret = $db->query($sql);
+}
+
 ?>
