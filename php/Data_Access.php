@@ -2,7 +2,7 @@
 
 class MyDB extends SQLite3 {
     function __construct() {
-        $this->open('../SECKKDB.db');
+        $this->open('../coffeedb.db');
     }
 }
 
