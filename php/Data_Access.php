@@ -65,13 +65,8 @@ function getCustomerPassword($dbReturned, $username){
 
 function createNewUser($dbReturned, $user_name, $user_password, $user_email, 
     $user_first, $user_last, $user_phone){
-    //$db = $dbReturned;
-    $conn = new mysqli('SECKK.db');
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-
+    $db = $dbReturned;
+    
     //can use query to update
     //see this https://www.w3schools.com/php/php_mysql_insert.asp
     $sql = <<<EOF
@@ -79,11 +74,7 @@ function createNewUser($dbReturned, $user_name, $user_password, $user_email,
         VALUES("$user_name", "$user_email", "$user_first", "$user_last", "$user_password", "$user_phone");
         EOF;
 
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-      } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-      }
+    $db->query($sql);
 }
 
 ?>
