@@ -77,9 +77,9 @@ function createNewUser($dbReturned, $user_name, $user_password, $user_email,
         ':user_name' => $user_name,
         ':user_email' => $user_email,
         ':user_first' => $user_first,
-        ':user_last' => $user_last.
-        ':user_password' => $user_password;
-        ':user_phone'=> $user_phone;
+        ':user_last' => $user_last,
+        ':user_password' => $user_password.,
+        ':user_phone'=> $user_phone,
     ]);
 }
 
