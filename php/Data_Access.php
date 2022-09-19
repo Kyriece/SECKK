@@ -2,7 +2,7 @@
 
 class MyDB extends SQLite3 {
     function __construct() {
-        $this->open('../SECKK.db');
+        $this->open('../SECKKDB.db');
     }
 }
 
@@ -65,8 +65,8 @@ function getCustomerPassword($dbReturned, $username){
 
 function createNewUser($dbReturned, $user_name, $user_password, $user_email, 
     $user_first, $user_last, $user_phone){
-    //$db = $dbReturned;
-    $db = new SQLite3('../SECKK.db');
+    $db = $dbReturned;
+    //$db = new SQLite3('../SECKK.db');
     
     //can use query to update
     //see this https://www.w3schools.com/php/php_mysql_insert.asp
@@ -76,7 +76,6 @@ function createNewUser($dbReturned, $user_name, $user_password, $user_email,
             EOF;
         
     $db->exec("INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber) VALUES ('$user_name', '$user_email', '$user_first', '$user_last', '$user_password', '$user_phone')");
-
 }
 
 ?>
