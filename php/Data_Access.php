@@ -69,12 +69,18 @@ function createNewUser($dbReturned, $user_name, $user_password, $user_email,
     
     //can use query to update
     //see this https://www.w3schools.com/php/php_mysql_insert.asp
-    $sql = <<<EOF
-        INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber)
-        VALUES("$user_name", "$user_email", "$user_first", "$user_last", "$user_password", "$user_phone");
-        EOF;
-
-    $db->query($sql);
+    $sql = 'INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber) '
+            . 'VALUES(:user_name, :user_email, :user_first, :user_last, :user_password, :user_phone)';
+        
+    $stmt = $db.prepapre($sql);
+    $stmt->execute([
+        ':user_name' => $user_name,
+        ':user_email' => $user_email,
+        ':user_first' => $user_first,
+        ':user_last' => $user_last.
+        ':user_password' => $user_password;
+        ':user_phone'=> $user_phone;
+    ]);
 }
 
 ?>
