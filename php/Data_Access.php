@@ -74,7 +74,7 @@ function createNewUser($dbReturned, $user_name, $user_password, $user_email,
         VALUES("$username", "$user_password", "$user_email", "$user_first", "$user_last", "$user_phone");
     EOF;
 
-    $ret = $db->query($sql);
+    $db->query($sql);
 }
 
 ?>
