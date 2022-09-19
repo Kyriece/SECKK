@@ -1,5 +1,5 @@
 <?php
-include('Create_User.php');
+include('Data_Access.php');
 ?>
 
 <html>
@@ -13,6 +13,7 @@ include('Create_User.php');
         $user_phone = $_POST["userPhoneNumber"];
 
         $db = openDB();
+        
         createNewUser($db, $user_name, $user_password, $user_email, 
             $user_first, $user_last, $user_phone);
 
