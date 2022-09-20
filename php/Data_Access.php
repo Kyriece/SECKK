@@ -67,7 +67,7 @@ function createNewUser($dbReturned, $user_name, $user_password, $user_email, $us
     $db = new SQLite3('../coffeedb.db');
     
     $db->exec("INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber) VALUES ('$user_name', '$user_email', '$user_first', '$user_last', '$user_password', '$user_phone')");
-    $db.close();
+    $db->close();
 }
 
 ?>
