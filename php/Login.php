@@ -25,7 +25,7 @@ include('Data_Access.php');
         }else if($user_password == $userPass && $user_role == 'productAdmin'){
             header("Location: ../template/ProductManagement.html", TRUE, 301);
             exit();
-        }else if($user_password == $userPass && $userRole == 'userAdmin'){
+        }else if($user_password == $userPass && $user_role == 'userAdmin'){
 
         }else{
             header("Location: ../template/LoginFail.html", TRUE, 301);
