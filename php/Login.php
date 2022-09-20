@@ -6,12 +6,12 @@ include('rsa.php');
 <html>
     <body>
         <?php
-        $ecrypted_user_password = $_POST['userPassword'];
-
+        $encrypted_user_password = $_POST['userPassword'];
+        echo $encrypted_user_password;
         // Get the private Key
         $privateKey = get_rsa_privatekey('private.key');
         // compute the decrypted value
-        $decrypted = rsa_decryption($ecrypted_user_password, $privateKey);
+        $decrypted = rsa_decryption($encrypted_user_password, $privateKey);
         echo 'decrypted: ' . $decrypted."<br/><br/>";
 
         // Split decrypted value based on "&"
