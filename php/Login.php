@@ -18,11 +18,11 @@ include('Data_Access.php');
         while($row = $ret2->fetchArray(SQLITE3_ASSOC) ) {
             $user_role = $row['userRole'];
         }
-        /*
+        
         if($user_password == $userPass && $userRole == 'user'){
             header("Location: ../template/home.html", TRUE, 301);
             exit();
-        }else if($user_password == $userPass && $userRole == 'productAdmin'){
+        }else if($user_password == $userPass && $user_role == 'productAdmin'){
             header("Location: ../template/ProductManagement.html", TRUE, 301);
             exit();
         }else if($user_password == $userPass && $userRole == 'userAdmin'){
@@ -31,8 +31,7 @@ include('Data_Access.php');
             header("Location: ../template/LoginFail.html", TRUE, 301);
             exit();
         }
-        */
-        echo $user_role;
+
         closeDB($db);
         ?>
     </body>
