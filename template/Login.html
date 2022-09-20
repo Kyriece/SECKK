@@ -83,37 +83,13 @@
               var hashed_password = SHA256.hash(password);
               var currentTime = getTime();
               var ciphertext = RSA_encryption(hashed_password + "&" + currentTime, public_key);
-              document.getElementById("userPassword").value = ciphertext;
+              document.getElementById("userPassword").value = hashed_password;
             }
 
             function getTime() {
               //get current time in Second since Jan 01 1970. (UTC)
               var currentTime = Math.floor(new Date().getTime() / 1000);
               return currentTime;
-            }
-
-            function encryption(hashed_password, time) {
-              var hashed_value = hashed_password;
-              var timestamp = time;
-              var ciphertext = RSA_encryption(hashed_value + "&" + timestamp, public_key);
-              return ciphertext;
-            }
-
-            function decryption() {
-              var encrypted = document.getElementById('encrypted').value;
-              var decrypted = RSA_decryption(encrypted, private_key);
-              document.getElementById('decrypted').innerHTML = decrypted;
-              document.getElementById('decrypted').value = decrypted;
-            }
-
-
-            function split_string() {
-              var string = document.getElementById('decrypted').value;
-              var split = string.split("&");
-              document.getElementById('split1').innerHTML = split[0];
-              document.getElementById('split1').value = split[0];
-              document.getElementById('split2').innerHTML = split[1];
-              document.getElementById('split2').value = split[1];
             }
 
         </script>
