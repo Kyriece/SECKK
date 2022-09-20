@@ -1,5 +1,6 @@
 <?php
 include('Data_Access.php');
+include('rsa.php');
 ?>
 
 <html>
@@ -7,6 +8,20 @@ include('Data_Access.php');
         <?php
         $user_password = $_POST['userPassword'];
         echo $user_password;
+
+        // Get the private Key
+        $privateKey = get_rsa_privatekey('private.key');
+        // compute the decrypted value
+        $decrypted = rsa_decryption($encrypted, $privateKey);
+        echo 'decrypted: ' . $decrypted."<br/><br/>";
+
+        // Split decrypted value based on "&"
+        echo "<br/>Split the decrypted value based on '&': <br/>";
+        $split_value = explode("&", $decrypted);
+        echo "split 1 (hashed message): " . $split_value[0]."<br/>";
+        echo "split 2 (timestamp): " . $split_value[1]."<br/>";
+
+    
         /*
         $user_name = $_POST['username'];
         $user_password = $_POST['userPassword'];
