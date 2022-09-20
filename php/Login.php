@@ -15,7 +15,7 @@ include('Data_Access.php');
         while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
             $userPass = $row['userPassword'];
         }
-        while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
+        while($row = $ret2->fetchArray(SQLITE3_ASSOC) ) {
             $user_role = $row['userRole'];
         }
         echo $user_role;
