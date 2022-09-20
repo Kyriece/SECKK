@@ -63,10 +63,10 @@ function getCustomerPassword($dbReturned, $username){
     return $ret;
 }
 
-function createNewUser($dbReturned, $user_name, $user_password, $user_email, $user_first, $user_last, $user_phone){
+function createNewUser($dbReturned, $user_name, $user_password, $user_email, $user_first, $user_last, $user_phone, $user_role){
     $db = new SQLite3('../coffeedb.db');
     
-    $db->exec("INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber) VALUES ('$user_name', '$user_email', '$user_first', '$user_last', '$user_password', '$user_phone')");
+    $db->exec("INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber, userRole) VALUES ('$user_name', '$user_email', '$user_first', '$user_last', '$user_password', '$user_phone','$user_role')");
     $db->close();
 }
 
