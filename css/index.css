@@ -6,7 +6,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   gap: 0px;
   background-color:#5d3735;
   padding: 0px;
