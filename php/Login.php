@@ -9,10 +9,13 @@ include('Data_Access.php');
         $user_password = $_POST['userPassword'];
         $db = openDB();
         $ret = getCustomerPassword($db, $user_name);
+        $ret2 = getUserRole($db, $user_name);
         $userPass = "";
         $user_role = "";
         while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
             $userPass = $row['userPassword'];
+        }
+        while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
             $user_role = $row['userRole'];
         }
         echo $user_role;

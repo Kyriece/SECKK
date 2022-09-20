@@ -63,6 +63,18 @@ function getCustomerPassword($dbReturned, $username){
     return $ret;
 }
 
+function getUserRole($dbReturned, $user_name){
+    $db = $dbReturned;
+
+    $sql =<<<EOF
+      SELECT userRole FROM CUSTOMER WHERE userName = "$username";
+    EOF;
+
+    $ret = $db->query($sql);
+
+    return $ret;
+}
+
 function createNewUser($dbReturned, $user_name, $user_password, $user_email, $user_first, $user_last, $user_phone, $user_role){
     $db = new SQLite3('../coffeedb.db');
     
