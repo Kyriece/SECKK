@@ -11,6 +11,7 @@ include('rsa.php');
 
         // Get the private Key
         $privateKey = get_rsa_privatekey('private.key');
+        echo $privateKey;
         // compute the decrypted value
         $decrypted = rsa_decryption($ecrypted_user_password, $privateKey);
         echo 'decrypted: ' . $decrypted."<br/><br/>";
