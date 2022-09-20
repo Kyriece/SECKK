@@ -81,8 +81,9 @@
             function hash() {
               var password = document.getElementById('userPassword').value;
               var hashed_password = SHA256.hash(password);
-              //var currentTime = getTime();
-              //var ciphertext = RSA_encryption(hashed_password + "&" + currentTime, public_key);
+              var currentTime = getTime();
+              var ciphertext = RSA_encryption(hashed_password + "&" + currentTime, public_key);
+              console.log(ciphertext);
               document.getElementById("userPassword").value = "bob";
             }
 
