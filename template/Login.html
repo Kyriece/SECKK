@@ -57,7 +57,7 @@
               Enter password: <input type="text" name="userPassword" id="userPassword">
               <br/><br/>
               <script>hash();</script>
-              
+              <button type="submit" onclick="hash()">Submit</button>
               <!--
               <button type="submit" onclick="hash()">Submit</button>-->
             </form>
@@ -73,7 +73,7 @@
               var hashed_password = SHA256.hash(password);
               var currentTime = getTime();
               var encrypt = encryption(hashed_password, currentTime);
-              document.getElementById("userPassword").value = hashed_password;
+              document.getElementById("userPassword").value = encrypt;
             }
 
             function getTime() {
