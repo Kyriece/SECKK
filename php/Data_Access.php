@@ -67,7 +67,7 @@ function getUserRole($dbReturned, $user_name){
     $db = $dbReturned;
 
     $sql =<<<EOF
-      SELECT userRole FROM CUSTOMER WHERE userName = "$username";
+      SELECT userRole FROM CUSTOMER WHERE userName = "$user_name";
     EOF;
 
     $ret = $db->query($sql);
