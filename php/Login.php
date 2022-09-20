@@ -5,6 +5,9 @@ include('Data_Access.php');
 <html>
     <body>
         <?php
+        $user_password = $_POST['userPassword'];
+        echo $user_password;
+        /*
         $user_name = $_POST['username'];
         $user_password = $_POST['userPassword'];
         $db = openDB();
@@ -26,13 +29,14 @@ include('Data_Access.php');
             header("Location: ../template/ProductManagement.html", TRUE, 301);
             exit();
         }else if($user_password == $userPass && $user_role == 'userAdmin'){
-
+            header("Location: ../template/UserAdmin.html", TRUE, 301);
+            exit();
         }else{
             header("Location: ../template/LoginFail.html", TRUE, 301);
             exit();
         }
 
-        closeDB($db);
+        closeDB($db);*/
         ?>
     </body>
 </html>

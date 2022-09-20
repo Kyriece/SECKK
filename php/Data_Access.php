@@ -82,4 +82,13 @@ function createNewUser($dbReturned, $user_name, $user_password, $user_email, $us
     $db->close();
 }
 
+function getProduct($dbReturned, $product_name){
+    $db = $dbReturned;
+    $sql =<<<EOF
+      SELECT * FROM CUSTOMER WHERE productName = "$product_name";
+    EOF;
+    $ret = $db->query($sql);
+    return $ret;
+}
+
 ?>
