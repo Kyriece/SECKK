@@ -15,7 +15,8 @@ include('Data_Access.php');
             $userPass = $row['userPassword'];
             $user_role = $row['userRole'];
         }
-
+        echo $user_role;
+        /*
         if($user_password == $userPass && $userRole == 'user'){
             header("Location: ../template/home.html", TRUE, 301);
             exit();
@@ -23,13 +24,11 @@ include('Data_Access.php');
             header("Location: ../template/ProductManagement.html", TRUE, 301);
             exit();
         }else if($user_password == $userPass && $userRole == 'userAdmin'){
-            
+
         }else{
             header("Location: ../template/LoginFail.html", TRUE, 301);
             exit();
-        }
-
-        echo "The password is: ".$userPass;
+        }*/
         closeDB($db);
         ?>
     </body>
