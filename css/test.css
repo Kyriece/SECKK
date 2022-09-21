@@ -61,7 +61,7 @@
 .product h3 {
   text-transform: capitalize;
   font-size: 1.1rem;
-  margin-top: 1rem;
+  margin-top: 5px;
   letter-spacing: var(--mainSpacing);
   text-align: center;
 }
