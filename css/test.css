@@ -61,9 +61,10 @@
     margin: 0 auto;
     max-width: 1170px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-column-gap: 1.5rem;
     grid-row-gap: 2rem;
+    margin-top: -10px;
   }
   .img-container {
     position: relative;
