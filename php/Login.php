@@ -6,6 +6,7 @@ include('rsa.php');
 <html>
     <body>
         <?php
+        /*
         $encrypted_user_password = $_POST['userPassword'];
         echo $encrypted_user_password;
         // Get the private Key
@@ -19,10 +20,18 @@ include('rsa.php');
         $split_value = explode("&", $decrypted);
         echo "split 1 (hashed message): " . $split_value[0]."<br/>";
         echo "split 2 (timestamp): " . $split_value[1]."<br/>";
-    
-        /*
+        */
+        //Get values with http POST
         $user_name = $_POST['username'];
-        $user_password = $_POST['userPassword'];
+        $encrypted_user_password = $_POST['userPassword'];
+
+        //Decrypt password
+        $privateKey = get_rsa_privatekey('private.key');
+        $decrypted = rsa_decryption($encrypted_user_password, $privateKey);
+        $split_value = explode("&", $decrypted);
+        $hashed_password = $split_value[0];
+        echo $hashed_password;
+/*
         $db = openDB();
         $ret = getCustomerPassword($db, $user_name);
         $ret2 = getUserRole($db, $user_name);
