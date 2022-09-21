@@ -51,6 +51,7 @@
   width: 100%;
   min-height: 12rem;
   transition: var(--mainTransition);
+  object-fit: cover;
 }
 .img-container:hover .product-img {
   opacity: 0.5;
