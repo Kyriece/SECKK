@@ -1,0 +1,12 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Orange Cheese Cake",
+          "price": 10.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      }
+    ]
+  }
