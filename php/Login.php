@@ -30,7 +30,7 @@ include('rsa.php');
         $decrypted = rsa_decryption($encrypted_user_password, $privateKey);
         $split_value = explode("&", $decrypted);
         $hashed_password = $split_value[0];
-        $time_stamp = $split_value[1]
+        $time_stamp = $split_value[1];
         
         $db = openDB();
         $ret = getCustomerPassword($db, $user_name);
@@ -42,6 +42,7 @@ include('rsa.php');
         }
         while($row = $ret2->fetchArray(SQLITE3_ASSOC) ) {
             $user_role = $row['userRole'];
+
         }
         if($time_stamp < timestamp+1){
             if($user_password == $userPass && $user_role == 'user'){
