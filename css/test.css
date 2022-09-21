@@ -13,7 +13,7 @@
 .products-center {
   width: 90vw;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1190px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 3rem;
