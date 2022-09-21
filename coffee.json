@@ -37,7 +37,7 @@
         "fields": {
           "title": "Pacific Rim",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/pacific.png" } } }
         }
       },
       {
