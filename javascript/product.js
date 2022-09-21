@@ -43,36 +43,19 @@ class UI{
         let result = '';
         products.forEach(product => {
             result += `
-            <div class = "product-grid-container">
-            <!--Product 1-->
-            <div class = "card-wrapper">
-                <div class = "card">
-                  <!-- card left -->
-                  <div class = "product-imgs">
-                    <img src=${product.image} alt="">
-                  </div>
-                  <!-- card right -->
-                  <div class = "product-content">
-                    <h2 class = "product-title">${product.title}</h2>
-                    <div class = "product-price">
-                      <p>Price: <span>$${product.price}</span></p>
-                    </div>
-          
-                    <div class = "product-detail">
-                      <h2>about this item: </h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
-                    </div>
-          
-                    <div class = "purchase-info">
-                      <input type = "number" min = "0" value = "1">
-                      <button type = "button" class = "btn">
-                        Add to Cart <i class = "fas fa-shopping-cart"></i>
-                      </button>
-                    </div>
-                  </div>
+            <!-- single product -->
+            <article class = "product">
+                <div class = "img-container">
+                    <img src = ${product.image} alt = "product" class = "product-img">
+                    <button class = "bag-btn" data-id = ${product.id}" onClick = "changePage(${product.id})">
+                        <i class = "fas fa-shopping-cart"></i>
+                        Order Now
+                    </button>
                 </div>
-              </div>
-              </br></br>
+                <h3>${product.title}</h3>
+                <h4>$${product.price}</h4>
+            </article>
+            <!--end single product -->
             `;
         });
         productsDOM.innerHTML = result; 
