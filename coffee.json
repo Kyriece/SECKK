@@ -3,15 +3,159 @@
       {
         "sys": { "id": "1" },
         "fields": {
-          "title": "coffee",
-          "price": 10.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "title": "Copper Moon",
+          "price": 20,
+          "image": { "fields": { "file": { "url": "../images/copper.png" } } }
         }
       },
       {
         "sys": { "id": "2" },
         "fields": {
-          "title": "coffee",
+          "title": "Eight O'Clock",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Stumptons Hair Bender",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/hair.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "Medium Roast",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/medium_roast.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Pacific Rim",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Philz Coffee",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/philz.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "Lavazza",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/Lavazza.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Day Dreamer",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/Day_Dreamer.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/Moccona.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "10" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/Grinders.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "11" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "12" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "13" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "14" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "15" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "16" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "17" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "18" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "19" },
+        "fields": {
+          "title": "",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "20" },
+        "fields": {
+          "title": "",
           "price": 12.99,
           "image": { "fields": { "file": { "url": "../images/eight.png" } } }
         }
