@@ -50,7 +50,7 @@ class UI{
                 <div class = "card">
                   <!-- card left -->
                   <div class = "product-imgs">
-                    <img src=${product.image} alt="">
+                    <img src=${product.image} alt="" class = "product-img">
                   </div>
                   <!-- card right -->
                   <div class = "product-content">
