@@ -43,6 +43,7 @@ class UI{
         let result = '';
         products.forEach(product => {
             result += `
+            <article class = "product">
             <div class = "product-grid-container">
             <!--Product 1-->
             <div class = "card-wrapper">
@@ -72,6 +73,7 @@ class UI{
                   </div>
                 </div>
               </div>
+              </article>
             `;
         });
         productsDOM.innerHTML = result; 

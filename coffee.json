@@ -67,7 +67,7 @@
       {
         "sys": { "id": "9" },
         "fields": {
-          "title": "",
+          "title": "Moccona",
           "price": 12.99,
           "image": { "fields": { "file": { "url": "../images/Moccona.jpg" } } }
         }
@@ -75,89 +75,89 @@
       {
         "sys": { "id": "10" },
         "fields": {
-          "title": "",
+          "title": "Grinders",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/Grinders.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Grinders.jpg" } } }
         }
       },
       {
         "sys": { "id": "11" },
         "fields": {
-          "title": "",
+          "title": "Harris",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Harris.jpg" } } }
         }
       },
       {
         "sys": { "id": "12" },
         "fields": {
-          "title": "",
+          "title": "Primo",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Primo.jpg" } } }
         }
       },
       {
         "sys": { "id": "13" },
         "fields": {
-          "title": "",
+          "title": "Remio",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Remio.jpg" } } }
         }
       },
       {
         "sys": { "id": "14" },
         "fields": {
-          "title": "",
+          "title": "Shangri-La",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Shangri-La.jpg" } } }
         }
       },
       {
         "sys": { "id": "15" },
         "fields": {
-          "title": "",
+          "title": "Agro Beans",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Agro_Beans.jpg" } } }
         }
       },
       {
         "sys": { "id": "16" },
         "fields": {
-          "title": "",
+          "title": "illy",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/illy.jpg" } } }
         }
       },
       {
         "sys": { "id": "17" },
         "fields": {
-          "title": "",
+          "title": "Monkey Business",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Monkey_Business.jpg" } } }
         }
       },
       {
         "sys": { "id": "18" },
         "fields": {
-          "title": "",
+          "title": "Map Coffee",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Map_Coffee.jpg" } } }
         }
       },
       {
         "sys": { "id": "19" },
         "fields": {
-          "title": "",
+          "title": "Gravity",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Gravity.jpg" } } }
         }
       },
       {
         "sys": { "id": "20" },
         "fields": {
-          "title": "",
+          "title": "Byron Bay",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+          "image": { "fields": { "file": { "url": "../images/Byron_Bay.jpg" } } }
         }
       }
     ]
