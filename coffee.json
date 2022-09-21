@@ -3,7 +3,7 @@
       {
         "sys": { "id": "1" },
         "fields": {
-          "title": "Orange Cheese Cake",
+          "title": "coffee",
           "price": 10.99,
           "image": { "fields": { "file": { "url": "../images/eight.png" } } }
         }
@@ -11,7 +11,7 @@
       {
         "sys": { "id": "2" },
         "fields": {
-          "title": "Chocolate Forest",
+          "title": "coffee",
           "price": 12.99,
           "image": { "fields": { "file": { "url": "../images/eight.png" } } }
         }
