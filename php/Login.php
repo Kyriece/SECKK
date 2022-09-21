@@ -30,8 +30,8 @@ include('rsa.php');
         $decrypted = rsa_decryption($encrypted_user_password, $privateKey);
         $split_value = explode("&", $decrypted);
         $hashed_password = $split_value[0];
-        echo $hashed_password;
-/*
+        $time_stamp = $split_value[1]
+        
         $db = openDB();
         $ret = getCustomerPassword($db, $user_name);
         $ret2 = getUserRole($db, $user_name);
@@ -43,22 +43,25 @@ include('rsa.php');
         while($row = $ret2->fetchArray(SQLITE3_ASSOC) ) {
             $user_role = $row['userRole'];
         }
-        
-        if($user_password == $userPass && $user_role == 'user'){
-            header("Location: ../template/home.html", TRUE, 301);
-            exit();
-        }else if($user_password == $userPass && $user_role == 'productAdmin'){
-            header("Location: ../template/ProductManagement.html", TRUE, 301);
-            exit();
-        }else if($user_password == $userPass && $user_role == 'userAdmin'){
-            header("Location: ../template/UserAdmin.html", TRUE, 301);
-            exit();
+        if($time_stamp < timestamp+1){
+            if($user_password == $userPass && $user_role == 'user'){
+                header("Location: ../template/home.html", TRUE, 301);
+                exit();
+            }else if($user_password == $userPass && $user_role == 'productAdmin'){
+                header("Location: ../template/ProductManagement.html", TRUE, 301);
+                exit();
+            }else if($user_password == $userPass && $user_role == 'userAdmin'){
+                header("Location: ../template/UserAdmin.html", TRUE, 301);
+                exit();
+            }else{
+                header("Location: ../template/LoginFail.html", TRUE, 301);
+                exit();
+            }
         }else{
-            header("Location: ../template/LoginFail.html", TRUE, 301);
-            exit();
+            echo "SECURITY ISSUE!";
         }
 
-        closeDB($db);*/
+        closeDB($db);
         ?>
     </body>
 </html>
