@@ -1,7 +1,7 @@
 /* --------------- Products ---------------- */
 
 .products {
-  padding: 10rem 0;
+  padding: 4rem 0;
 }
 .section-title h2 {
   text-align: center;
@@ -61,7 +61,7 @@
 .product h3 {
   text-transform: capitalize;
   font-size: 1.1rem;
-  margin-top: 5px;
+  margin-top: 0.7px;
   letter-spacing: var(--mainSpacing);
   text-align: center;
 }
