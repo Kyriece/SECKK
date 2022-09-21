@@ -1,3 +1,14 @@
+.product-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0px;
+    background-color:#5d3735;
+    padding: 0px;
+    margin-top:0px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
 .card-wrapper{
     max-width: 1100px;
     margin: 0 auto;
