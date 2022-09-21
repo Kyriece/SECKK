@@ -22,9 +22,9 @@ class Products{
                 const {title,price} = item.fields
                 const {id} = item.sys
                 const image = item.fields.image.fields.file.url;
+                console.log(item.sys)
                 return {title,price,id,image}
             })
-            console.log(item.sys)
             return products
         }catch (error){
             console.log(error);
