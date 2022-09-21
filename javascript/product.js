@@ -15,7 +15,7 @@ let cart = [];
 class Products{
     async getProducts(){
         try{
-            let result = await fetch('coffee.json');
+            let result = await fetch("../javascript/coffee.json");
             let data = await result.json();
             let products = data.items;
             products = products.map(item => {
