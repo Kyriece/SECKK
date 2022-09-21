@@ -108,4 +108,8 @@
     .product-content{
         padding-top: 0;
     }
-  }
+}
+
+.product{
+    padding: 10px 80px 20px 80px;
+}
