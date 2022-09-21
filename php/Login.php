@@ -45,9 +45,9 @@ include('rsa.php');
             $user_role = $row['userRole'];
 
         }
-        $time_stamp = $time_stamp + 3;
+        //$time_stamp = $time_stamp + 3; -->Testing
         $time_diff = abs($server_time_stamp - $time_stamp);
-        if($time_diff < 1){
+        if($time_diff < 150){
             if($hashed_password == $userPass && $user_role == 'user'){
                 header("Location: ../template/home.html", TRUE, 301);
                 exit();
