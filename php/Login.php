@@ -44,7 +44,7 @@ include('rsa.php');
             $user_role = $row['userRole'];
 
         }
-        if($time_stamp < timestamp+1){
+        if($time_stamp < $time_stamp+1){
             if($user_password == $userPass && $user_role == 'user'){
                 header("Location: ../template/home.html", TRUE, 301);
                 exit();
