@@ -24,6 +24,8 @@
   overflow: hidden;
   height: 500px;
   width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .bag-btn {
   position: absolute;
