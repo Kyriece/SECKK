@@ -7,6 +7,14 @@
           "price": 10.99,
           "image": { "fields": { "file": { "url": "../images/eight.png" } } }
         }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "Chocolate Forest",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "../images/eight.png" } } }
+        }
       }
     ]
   }
