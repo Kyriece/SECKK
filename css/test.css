@@ -22,8 +22,8 @@
 .img-container {
   position: relative;
   overflow: hidden;
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
 }
 .bag-btn {
   position: absolute;
