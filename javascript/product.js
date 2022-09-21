@@ -24,6 +24,7 @@ class Products{
                 const image = item.fields.image.fields.file.url;
                 return {title,price,id,image}
             })
+            console.log(item.sys)
             return products
         }catch (error){
             console.log(error);
