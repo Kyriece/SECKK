@@ -43,14 +43,13 @@ class UI{
         let result = '';
         products.forEach(product => {
             result += `
-            <article class = "product">
             <div class = "product-grid-container">
             <!--Product 1-->
             <div class = "card-wrapper">
                 <div class = "card">
                   <!-- card left -->
                   <div class = "product-imgs">
-                    <img src=${product.image} alt="" class = "product-img">
+                    <img src=${product.image} alt="">
                   </div>
                   <!-- card right -->
                   <div class = "product-content">
@@ -73,7 +72,7 @@ class UI{
                   </div>
                 </div>
               </div>
-              </article>
+              </br></br>
             `;
         });
         productsDOM.innerHTML = result; 
