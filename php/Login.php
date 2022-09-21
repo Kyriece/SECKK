@@ -47,13 +47,13 @@ include('rsa.php');
         }
         $time_diff = $server_time_stamp - $time_stamp;
         if($time_diff < 1){
-            if($user_password == $userPass && $user_role == 'user'){
+            if($hashed_password == $userPass && $user_role == 'user'){
                 header("Location: ../template/home.html", TRUE, 301);
                 exit();
-            }else if($user_password == $userPass && $user_role == 'productAdmin'){
+            }else if($hashed_password == $userPass && $user_role == 'productAdmin'){
                 header("Location: ../template/ProductManagement.html", TRUE, 301);
                 exit();
-            }else if($user_password == $userPass && $user_role == 'userAdmin'){
+            }else if($hashed_password == $userPass && $user_role == 'userAdmin'){
                 header("Location: ../template/UserAdmin.html", TRUE, 301);
                 exit();
             }else{
