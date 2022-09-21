@@ -49,13 +49,13 @@ class UI{
                 <div class = "card">
                   <!-- card left -->
                   <div class = "product-imgs">
-                    <img src="../images/copper.png" alt="">
+                    <img src=${product.image} alt="">
                   </div>
                   <!-- card right -->
                   <div class = "product-content">
-                    <h2 class = "product-title">Copper Moon</h2>
+                    <h2 class = "product-title">${product.title}</h2>
                     <div class = "product-price">
-                      <p>Price: <span>$30</span></p>
+                      <p>Price: <span>$${product.price}</span></p>
                     </div>
           
                     <div class = "product-detail">
