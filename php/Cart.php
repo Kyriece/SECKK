@@ -42,6 +42,7 @@ include('Data_Access.php');
                     if($products[$index] == $product_id){
                         echo "break" . " ". $products[$index]. " ". $product_id . "\n";
                         break;
+                        $index++;
                     }
                     $index++;
                 }
