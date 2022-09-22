@@ -45,12 +45,12 @@ class UI{
                         <div class="infoWrap"> 
                             <div class="cartSection">
                                 <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-                                <p class="itemNumber">${product.ProductID}</p>
-                                <h3>${product.Name}</h3>
+                                <p class="itemNumber"></p>
+                                <h3></h3>
                                 
-                                <p> <input type="text"  class="qty" placeholder="3"/> x ${product.productPrice}</p>
+                                <p> <input type="text"  class="qty" placeholder="3"/> x </p>
                                 
-                                <p class="stockStatus"> In Stock: ${productQuantity}</p>
+                                <p class="stockStatus"> In Stock: </p>
                             </div>  
                             
                                 
