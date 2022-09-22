@@ -30,8 +30,8 @@ include('Data_Access.php');
                 echo $products[0] . " " . $quantity[0] . "\n";
               
                 closeDB($db);
-
-                updateCartQuantity($curr_user, $product_id, 5);
+                $quan = $quantity[$index] + 1;
+                updateCartQuantity($curr_user, $product_id, $quan);
                 
                 $db = openDB();
                 $ret = getCartDetailsForUser($db, $curr_user);
