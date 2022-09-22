@@ -6,7 +6,7 @@ include('Data_Access.php');
         <?php
 
             $myfile = fopen("currentUser.txt", "r") or die("Unable to open file!");
-            $curr_user =  fread($myfile,filesize("currentUser.txt"));
+            $curr_user =  1;//fread($myfile,filesize("currentUser.txt"));
             fclose($myfile);
 
             $db = openDB();
@@ -21,9 +21,6 @@ include('Data_Access.php');
                     $index++;
                 }
                 
-                for ($x = 0; $x < $index; $x++) {
-                    echo $products[$x] . " " . $quantity[$x];
-                }
 
             }else{
                 echo "empty";
