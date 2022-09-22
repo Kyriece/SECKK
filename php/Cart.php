@@ -21,6 +21,9 @@ include('Data_Access.php');
                     $index++;
                 }
                 
+                for ($x = 0; $x < $index; $x++) {
+                    echo $products[$x] . " " . $quantity[$x];
+                }
 
             }else{
                 echo "empty";
