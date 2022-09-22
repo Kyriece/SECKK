@@ -31,7 +31,6 @@ include('Data_Access.php');
                 $db = openDB();
                 $ret = getCartDetailsForUser($db, $curr_user, $product_id);
                 
-                $jsonArray[];
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
                     $jsonArray[] = $row;
                 }
