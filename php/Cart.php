@@ -46,11 +46,11 @@ include('Data_Access.php');
                 for ($x = 0; $x < $index; $x++) {
                     echo $products[$x] . " " . $quantity[$x]. "\n";
                 }
-
+                $db = openDB();
             }else{
                 echo "empty";
             }
-            $db = openDB();
+           
             
         ?>
     </body>
