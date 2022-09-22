@@ -12,42 +12,27 @@ include('Data_Access.php');
             $product_id = $_POST['product_id'];
 
             $db = openDB();
-            $ret = getCartDetailsForUser($db, $curr_user);
-            $products = array();
-            $quantity = array();
-            $index = 0;
+            $ret = getCartDetailsForUser($db, $curr_user, $product_id);
+            $quantity = 0;
             if($ret){
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
-                    $products[$index] = $row["ProductID"];
-                    $quantity[$index] = $row["Quantity"];
-                    if($products[$index] == $product_id){
-                        echo "break" . " ". $products[$index]. " ". $product_id . "\n";
-                        break;
-                        $index++;
-                    }
-                    $index++;
+                    $quantity = $row["Quantity"];
                 }
-                echo $products[0] . " " . $quantity[0] . "\n";
-              
+            
+                echo $quantity . "\n";
+                $quantity++;
                 closeDB($db);
-                $quan = $quantity[$index] + 1;
-                updateCartQuantity($curr_user, $product_id, $quan);
+
+                updateCartQuantity($curr_user, $product_id, $quantity);
                 
                 $db = openDB();
-                $ret = getCartDetailsForUser($db, $curr_user);
-                $index = 0;
+                $ret = getCartDetailsForUser($db, $curr_user, $product_id);
+            
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
-                    $products[$index] = $row["ProductID"];
-                    $quantity[$index] = $row["Quantity"];
-                    if($products[$index] == $product_id){
-                        echo "break" . " ". $products[$index]. " ". $product_id . "\n";
-                        break;
-                        $index++;
-                    }
-                    $index++;
+                    $quantity = $row["Quantity"];
                 }
-                echo $products[0] . " " . $quantity[0] . "\n";
-                $db = openDB();
+                echo $quantity;
+                closeDB($db);
             }else{
                 echo "empty";
             }
