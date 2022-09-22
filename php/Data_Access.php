@@ -87,7 +87,7 @@ function getUserRole($dbReturned, $user_name){
     return $ret;
 }
 
-function createNewUser($dbReturned, $user_name, $user_password, $user_email, $user_first, $user_last, $user_phone, $user_role){
+function createNewUser($user_name, $user_password, $user_email, $user_first, $user_last, $user_phone, $user_role){
     $db = new SQLite3('../coffeedb.db');
     
     $db->exec("INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber, userRole) VALUES ('$user_name', '$user_email', '$user_first', '$user_last', '$user_password', '$user_phone','$user_role')");
@@ -107,6 +107,23 @@ function getCartDetailsForUser($dbReturned, $user_ID){
     $db = $dbReturned;
     $sql =<<<EOF
       SELECT * FROM Cart WHERE CartID = $user_ID;
+    EOF;
+    $ret = $db->query($sql);
+    return $ret;
+}
+
+function updateCartDetailsForCurrUser($curr_user ,$product_id, $quantity){
+    //CartID is userID, will be deleted after each purchase
+    $db = new SQLite3('../coffeedb.db');
+
+    $db->exec();
+    $db->close();
+}
+
+function checkIfProductExist($cartID, $productID){
+    $db = $dbReturned;
+    $sql =<<<EOF
+      SELECT productID FROM Cart WHERE CartID = $user_ID;
     EOF;
     $ret = $db->query($sql);
     return $ret;

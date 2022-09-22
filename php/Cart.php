@@ -10,12 +10,21 @@ include('Data_Access.php');
             fclose($myfile);
 
             $db = openDB();
-            $ret = getCartDetailsForUser($db, $curr_user);
-            $user_id = 0;
-            while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
-                $user_id = $row['userID'];
+            $ret = getCartDetailsForUser($curr_user, $_POST['product_id']);
+            $products = array();
+            $quantity = array();
+            $index = 0;
+            if($ret){
+                while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
+                    $products[$index] = $row["ProductID"];
+                    $quantity[$index] = $row["Quantity"]
+                    $index = $index + 1;
+                }
+            }else{
+                echo "empty";
             }
-            echo $user_id;
+            
+            
         ?>
     </body>
 </html>
