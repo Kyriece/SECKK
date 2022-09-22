@@ -17,7 +17,7 @@ class Products{
         try{
             let result = await fetch("../php/cart.json");
             let data = await result.json();
-            let products = data[0];
+            let products = data;
             //products = products.map()
             return products
         }catch (error){
@@ -39,7 +39,7 @@ class UI{
         let result = '';
         products.forEach(product => {
             result += `
-                <h1>${product[0].CartID}</h2></br></br>
+                <h1>${product.CartID}</h2></br></br>
             `;
         });
         productsDOM.innerHTML = result; 
