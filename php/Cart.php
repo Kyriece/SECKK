@@ -22,7 +22,7 @@ include('Data_Access.php');
                 }
                 
                 for ($x = 0; $x <= index; $x++) {
-                    echo $products[$x] + " " + $quantity[$x];
+                    echo $products[$x] . " " . $quantity[$x];
                 }
 
             }else{
