@@ -39,7 +39,7 @@ class UI{
         let result = '';
         products.forEach(product => {
             result += `
-                <h1>${product.CartID}</h2></br></br>
+                ${product.CartID}</br></br>${product.Quantity}
             `;
         });
         productsDOM.innerHTML = result; 
