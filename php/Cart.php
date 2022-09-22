@@ -28,11 +28,11 @@ include('Data_Access.php');
                 for ($x = 0; $x < $index; $x++) {
                     echo $products[$x] . " " . $quantity[$x] . "\n";
                 }
-                closeDB($db);
+                $db = openDB();
 
                 updateCartQuantity($curr_user, $product_id, $quantity[$index]++);
                 
-                
+                $db = openDB();
                 $ret = getCartDetailsForUser($db, $curr_user);
                 $index = 0;
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
@@ -50,7 +50,7 @@ include('Data_Access.php');
             }else{
                 echo "empty";
             }
-            
+            $db = openDB();
             
         ?>
     </body>
