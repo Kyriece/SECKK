@@ -20,6 +20,11 @@ include('Data_Access.php');
                     $quantity[$index] = $row["Quantity"];
                     $index++;
                 }
+                
+                for ($x = 0; $x <= index; $x++) {
+                    echo $products[$x] + " " + $quantity[$x];
+                }
+
             }else{
                 echo "empty";
             }
