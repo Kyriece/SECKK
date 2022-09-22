@@ -47,7 +47,7 @@ class UI{
             <article class = "product">
                 <div class = "img-container">
                     <img src = ${product.image} alt = "product" class = "product-img">
-                    <button class = "bag-btn" data-id = ${product.id}" onClick = "changePage(${product.id})">
+                    <button class = "bag-btn" data-id = ${product.id}" onClick = "changePage(${product.page})">
                         <i class = "fas fa-shopping-cart"></i>
                         Order Now
                     </button>
