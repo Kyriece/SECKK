@@ -31,7 +31,7 @@ include('Data_Access.php');
               
                 closeDB($db);
 
-                updateCartQuantity($curr_user, $product_id, $quantity[$index]++);
+                updateCartQuantity($curr_user, $product_id, 5);
                 
                 $db = openDB();
                 $ret = getCartDetailsForUser($db, $curr_user);
@@ -40,6 +40,7 @@ include('Data_Access.php');
                     $products[$index] = $row["ProductID"];
                     $quantity[$index] = $row["Quantity"];
                     if($products[$index] == $product_id){
+                        echo "break" . " ". $products[$index]. " ". $product_id . "\n";
                         break;
                     }
                     $index++;
