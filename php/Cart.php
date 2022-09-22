@@ -27,9 +27,11 @@ include('Data_Access.php');
                     }
                     $index++;
                 }
+                echo $products[0] . " " . $quantity[0] . "\n";
+                /*
                 for ($x = 0; $x < $index; $x++) {
                     echo $products[$x] . " " . $quantity[$x] . "\n";
-                }
+                }*/
                 closeDB($db);
 /*
                 updateCartQuantity($curr_user, $product_id, $quantity[$index]++);
