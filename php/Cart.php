@@ -29,7 +29,7 @@ include('Data_Access.php');
                     echo $products[$x] . " " . $quantity[$x] . "\n";
                 }
 
-                updateCartQuantity($curr_user, $product_id, $quantity[$index]);
+                updateCartQuantity($curr_user, $product_id, $quantity[$index]++);
                 
                 
                 $ret = getCartDetailsForUser($db, $curr_user);
