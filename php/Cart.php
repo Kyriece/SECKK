@@ -22,6 +22,7 @@ include('Data_Access.php');
                     $quantity[$index] = $row["Quantity"];
                     if($products[$index] == $product_id){
                         echo "break";
+                        $index++;
                         break;
                     }
                     $index++;
