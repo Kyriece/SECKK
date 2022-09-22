@@ -39,23 +39,23 @@ class UI{
         let result = '';
         products.forEach(product => {
             //result += `${product.CartID} ${product.Quantity} </br></br>`;
-            //totalPrice = product.productPrice * product.Quantity;
+            
             result += `
                     <li class="items odd">
                         <div class="infoWrap"> 
                             <div class="cartSection">
                                 <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-                                <p class="itemNumber"></p>
-                                <h3></h3>
+                                <p class="itemNumber">${product.ProductID}</p>
+                                <h3>${product.productName}</h3>
                                 
-                                <p> <input type="text"  class="qty" placeholder="3"/> x </p>
+                                <p> <input type="text"  class="qty" placeholder="3"/> x $1.00</p>
                                 
-                                <p class="stockStatus"> In Stock: </p>
+                                <p class="stockStatus"> In Stock</p>
                             </div>  
                             
                                 
                             <div class="prodTotal cartSection">
-                                <p>1</p>
+                                <p>$15.00</p>
                             </div>
                             <div class="cartSection removeWrap">
                                 <a href="#" class="remove">x</a>
