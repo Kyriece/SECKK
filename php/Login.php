@@ -32,7 +32,7 @@ include('rsa.php');
             $user_role = $row['userRole'];
 
         }
-        while($row = $ret2->fetchArray(SQLITE3_ASSOC)){
+        while($row = $ret3->fetchArray(SQLITE3_ASSOC)){
             $user_id = $row['userID'];
         }
         //$time_stamp = $time_stamp + 3; -->Testing
