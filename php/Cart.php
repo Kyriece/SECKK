@@ -28,6 +28,7 @@ include('Data_Access.php');
                 for ($x = 0; $x < $index; $x++) {
                     echo $products[$x] . " " . $quantity[$x] . "\n";
                 }
+                closeDB($db);
 
                 updateCartQuantity($curr_user, $product_id, $quantity[$index]++);
                 
@@ -49,7 +50,7 @@ include('Data_Access.php');
             }else{
                 echo "empty";
             }
-            closeDB($db);
+            
             
         ?>
     </body>
