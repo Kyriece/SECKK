@@ -49,7 +49,7 @@ include('Data_Access.php');
             }else{
                 echo "empty";
             }
-            
+            closeDB($db);
             
         ?>
     </body>
