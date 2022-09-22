@@ -18,7 +18,7 @@ include('Data_Access.php');
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
                     $products[$index] = $row["ProductID"];
                     $quantity[$index] = $row["Quantity"]
-                    $index = $index + 1;
+                    $index++;
                 }
             }else{
                 echo "empty";
