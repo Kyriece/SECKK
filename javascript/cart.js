@@ -40,6 +40,7 @@ class UI{
         products.forEach(product => {
             //result += `${product.CartID} ${product.Quantity} </br></br>`;
             totalPrice = product.productPrice * product.Quantity;
+            console.log(totalPrice);
             result += `
                     <li class="items odd">
                         <div class="infoWrap"> 
