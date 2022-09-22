@@ -27,7 +27,12 @@ include('Data_Access.php');
                 closeDB($db);
 
                 updateCartQuantity($curr_user, $product_id, $quantity);
-                
+
+                $db = openDB();
+                $ret = getCartDetailsForUser($db, $curr_user, $product_id);
+                file_put_contents('cart.json', json_encode($ret));
+                closeDB($db);
+                /*
                 $db = openDB();
                 $ret = getCartDetailsForUser($db, $curr_user, $product_id);
             
@@ -35,8 +40,16 @@ include('Data_Access.php');
                     $quantity = $row["Quantity"];
                 }
                 //echo $quantity;
-                closeDB($db);
-                header("Location: ../template/Cart.html", TRUE, 301);
+                closeDB($db);*/
+                
+
+                //Create cart.json  
+                
+                
+                fwrite($myfile, $user_id);
+                fclose($myfile);
+
+                header("Location: ../template/Cart.html", TRUE, 301);*/
             }else{
                 echo "empty";
             }

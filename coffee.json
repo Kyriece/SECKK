@@ -17,7 +17,7 @@
         }
       },
       {
-        "sys": { "id": "3" },
+        "sys": { "id": 3 },
         "fields": {
           "title": "Stumptons Hair Bender",
           "price": 12.99,
@@ -25,7 +25,7 @@
         }
       },
       {
-        "sys": { "id": "4" },
+        "sys": { "id": 4 },
         "fields": {
           "title": "Medium Roast",
           "price": 12.99,
@@ -33,7 +33,7 @@
         }
       },
       {
-        "sys": { "id": "5" },
+        "sys": { "id": 5 },
         "fields": {
           "title": "Pacific Rim",
           "price": 12.99,
@@ -41,7 +41,7 @@
         }
       },
       {
-        "sys": { "id": "6" },
+        "sys": { "id": 6 },
         "fields": {
           "title": "Philz Coffee",
           "price": 12.99,
@@ -49,7 +49,7 @@
         }
       },
       {
-        "sys": { "id": "7" },
+        "sys": { "id": 7 },
         "fields": {
           "title": "Lavazza",
           "price": 12.99,
@@ -57,7 +57,7 @@
         }
       },
       {
-        "sys": { "id": "8" },
+        "sys": { "id": 8 },
         "fields": {
           "title": "Day Dreamer",
           "price": 12.99,
@@ -65,7 +65,7 @@
         }
       },
       {
-        "sys": { "id": "9" },
+        "sys": { "id": 9 },
         "fields": {
           "title": "Moccona",
           "price": 12.99,
@@ -73,7 +73,7 @@
         }
       },
       {
-        "sys": { "id": "10" },
+        "sys": { "id": 10 },
         "fields": {
           "title": "Grinders",
           "price": 12.99,
@@ -81,7 +81,7 @@
         }
       },
       {
-        "sys": { "id": "11" },
+        "sys": { "id": 11 },
         "fields": {
           "title": "Harris",
           "price": 12.99,
@@ -89,7 +89,7 @@
         }
       },
       {
-        "sys": { "id": "12" },
+        "sys": { "id": 12 },
         "fields": {
           "title": "Primo",
           "price": 12.99,
@@ -97,7 +97,7 @@
         }
       },
       {
-        "sys": { "id": "13" },
+        "sys": { "id": 13 },
         "fields": {
           "title": "Remio",
           "price": 12.99,
@@ -105,7 +105,7 @@
         }
       },
       {
-        "sys": { "id": "14" },
+        "sys": { "id": 14 },
         "fields": {
           "title": "Shangri-La",
           "price": 12.99,
@@ -113,7 +113,7 @@
         }
       },
       {
-        "sys": { "id": "15" },
+        "sys": { "id": 15 },
         "fields": {
           "title": "Agro Beans",
           "price": 12.99,
@@ -121,7 +121,7 @@
         }
       },
       {
-        "sys": { "id": "16" },
+        "sys": { "id": 16 },
         "fields": {
           "title": "illy",
           "price": 12.99,
@@ -129,7 +129,7 @@
         }
       },
       {
-        "sys": { "id": "17" },
+        "sys": { "id": 17 },
         "fields": {
           "title": "Monkey Business",
           "price": 12.99,
@@ -137,7 +137,7 @@
         }
       },
       {
-        "sys": { "id": "18" },
+        "sys": { "id": 18 },
         "fields": {
           "title": "Map Coffee",
           "price": 12.99,
@@ -145,7 +145,7 @@
         }
       },
       {
-        "sys": { "id": "19" },
+        "sys": { "id": 19 },
         "fields": {
           "title": "Gravity",
           "price": 12.99,
@@ -153,7 +153,7 @@
         }
       },
       {
-        "sys": { "id": "20" },
+        "sys": { "id": 20 },
         "fields": {
           "title": "Byron Bay",
           "price": 12.99,
