@@ -21,7 +21,7 @@ include('rsa.php');
         $db = openDB();
         $ret = getCustomerPassword($db, $user_name);
         $ret2 = getUserRole($db, $user_name);
-        $ret3 = getCustomerID($dbReturned, $user_name);
+        $ret3 = getCustomerID($db, $user_name);
         $userPass = "";
         $user_role = "";
         $user_id = "";
