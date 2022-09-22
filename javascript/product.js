@@ -31,6 +31,7 @@ class Products{
     }
 }
 
+//Can delete?
 function changePage(id){
     console.log(id);
     location.href = "../template/Cart.php";

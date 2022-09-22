@@ -1,3 +1,10 @@
 <?php
-    echo $_POST["product_id"];
+include('Data_Access.php');
 ?>
+<html>
+    <body>
+        <?php
+
+        ?>
+    </body>
+</html>
