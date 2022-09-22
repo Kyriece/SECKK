@@ -48,7 +48,7 @@ class UI{
                                 <p class="itemNumber">${product.ProductID}</p>
                                 <h3>${product.productName}</h3>
                                 
-                                <p> <input type="text"  class="qty" placeholder="3"/> x $1.00</p>
+                                <p> <input type="text"  class="qty" placeholder="3"/> x $${product.productPrice}</p>
                                 
                                 <p class="stockStatus"> In Stock</p>
                             </div>  
