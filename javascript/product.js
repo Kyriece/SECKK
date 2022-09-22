@@ -67,7 +67,7 @@ class UI{
     
 }
 
-// Local storage
+// Local storage...delete later
 class Storage{
     static saveProducts(products){
         localStorage.setItem("products", JSON.stringify(products));
