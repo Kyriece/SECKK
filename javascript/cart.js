@@ -44,7 +44,7 @@ class UI{
         let result = '';
         products.forEach(product => {
             result += `
-                Hello
+                <h1>${product.id}</h2></br></br>
             `;
         });
         productsDOM.innerHTML = result; 
