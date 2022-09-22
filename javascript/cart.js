@@ -39,7 +39,7 @@ class UI{
         let result = '';
         products.forEach(product => {
             //result += `${product.CartID} ${product.Quantity} </br></br>`;
-            
+            totalPrice = product.productPrice * product.Quantity;
             result += `
                     <li class="items odd">
                         <div class="infoWrap"> 
@@ -55,7 +55,7 @@ class UI{
                             
                                 
                             <div class="prodTotal cartSection">
-                                <p>$15.00</p>
+                                <p>$${totalPrice}</p>
                             </div>
                             <div class="cartSection removeWrap">
                                 <a href="#" class="remove">x</a>
