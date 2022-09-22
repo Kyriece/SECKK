@@ -10,7 +10,7 @@ include('Data_Access.php');
             fclose($myfile);
 
             $db = openDB();
-            $ret = getCartDetailsForUser($curr_user, $_POST['product_id']);
+            $ret = getCartDetailsForUser($db, $curr_user);
             $products = array();
             $quantity = array();
             $index = 0;
