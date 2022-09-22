@@ -14,12 +14,15 @@ include('Data_Access.php');
             $db = openDB();
             $ret = getCartDetailsForUser($db, $curr_user, $product_id);
             $quantity = 0;
+            
+            //If returned result is not empty, increment the cart quantity
+            //for the respective product by 1
             if($ret){
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
                     $quantity = $row["Quantity"];
                 }
             
-                echo $quantity . "\n";
+                //echo $quantity . "\n";
                 $quantity++;
                 closeDB($db);
 
@@ -31,8 +34,9 @@ include('Data_Access.php');
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
                     $quantity = $row["Quantity"];
                 }
-                echo $quantity;
+                //echo $quantity;
                 closeDB($db);
+                header("Location: ../template/Cart.html", TRUE, 301);
             }else{
                 echo "empty";
             }
