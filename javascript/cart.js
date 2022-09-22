@@ -50,7 +50,7 @@ class UI{
                                 
                                 <p> <input type="text"  class="qty" placeholder="3"/> x $${product.productPrice}</p>
                                 
-                                <p class="stockStatus"> In Stock</p>
+                                <p class="stockStatus"> In Stock: ${product.productQuantity}</p>
                             </div>  
                             
                                 
