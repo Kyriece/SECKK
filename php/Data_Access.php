@@ -115,7 +115,10 @@ function getCartDetailsForUser($dbReturned, $user_ID, $product_id){
 function getAllCartDetails($dbReturned, $user_ID){
     $db = $dbReturned;
     $sql =<<<EOF
-        SELECT * FROM Cart, Catalog WHERE Cart.ProductID = 1 and Catalog.productID = 1
+    SELECT Cart.CartID, Cart.ProductID,  Cart.Quantity, Catalog.productName, Catalog.productQuantity, Catalog.productPrice
+    FROM Cart
+    INNER JOIN Catalog ON Cart.ProductID = Catalog.productID
+    WHERE Cart.CartID = $user_ID
     EOF;
     $ret = $db->query($sql);
     return $ret;
