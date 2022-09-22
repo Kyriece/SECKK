@@ -22,8 +22,8 @@ include('Data_Access.php');
                     $quantity[$index] = $row["Quantity"];
                     if($products[$index] == $product_id){
                         echo "break";
-                        $index++;
                         break;
+                        $index++;
                     }
                     $index++;
                 }
@@ -31,8 +31,8 @@ include('Data_Access.php');
                     echo $products[$x] . " " . $quantity[$x] . "\n";
                 }
                 closeDB($db);
-
-                updateCartQuantity($curr_user, $product_id, $quantity[$index--]++);
+/*
+                updateCartQuantity($curr_user, $product_id, $quantity[$index]++);
                 
                 $db = openDB();
                 $ret = getCartDetailsForUser($db, $curr_user);
@@ -48,7 +48,7 @@ include('Data_Access.php');
                 for ($x = 0; $x < $index; $x++) {
                     echo $products[$x] . " " . $quantity[$x]. "\n";
                 }
-                $db = openDB();
+                $db = openDB();*/
             }else{
                 echo "empty";
             }
