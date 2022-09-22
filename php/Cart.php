@@ -11,8 +11,11 @@ include('Data_Access.php');
 
             $db = openDB();
             $ret = getCartDetailsForUser($db, $curr_user);
-            
-            echo $curr_user;
+            $user_id = 0;
+            while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
+                $user_id = $row['userID'];
+            }
+            echo $user_id;
         ?>
     </body>
 </html>
