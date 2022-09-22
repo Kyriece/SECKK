@@ -6,7 +6,7 @@ include('Data_Access.php');
         <?php
 
             $myfile = fopen("currentUser.txt", "r") or die("Unable to open file!");
-            $curr_user =  3;//fread($myfile,filesize("currentUser.txt"));
+            $curr_user =  1;//fread($myfile,filesize("currentUser.txt"));
             fclose($myfile);
 
             $db = openDB();
