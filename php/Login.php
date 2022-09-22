@@ -24,7 +24,7 @@ include('rsa.php');
         $ret3 = getCustomerID($db, $user_name);
         $userPass = "";
         $user_role = "";
-        $user_id = "";
+        $user_id = 0;
         while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
             $userPass = $row['userPassword'];
         }
@@ -42,8 +42,7 @@ include('rsa.php');
                 header("Location: ../template/home.html", TRUE, 301);
 
                 $myfile = fopen("currentUser.txt", "w") or die("Unable to open file!");
-                $txt = $user_id;
-                fwrite($myfile, $txt);
+                fwrite($myfile, $user_id);
                 fclose($myfile);
 
                 exit();
@@ -52,7 +51,7 @@ include('rsa.php');
 
                 $myfile = fopen("currentUser.txt", "w") or die("Unable to open file!");
                 $txt = $user_id;
-                fwrite($myfile, $txt);
+                fwrite($myfile, $user_id);
                 fclose($myfile);
 
                 exit();
@@ -61,7 +60,7 @@ include('rsa.php');
 
                 $myfile = fopen("currentUser.txt", "w") or die("Unable to open file!");
                 $txt = $user_id;
-                fwrite($myfile, $txt);
+                fwrite($myfile, $user_id);
                 fclose($myfile);
 
                 exit();
