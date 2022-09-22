@@ -33,7 +33,7 @@ class Products{
 
 function changePage(id){
     console.log(id);
-    location.href = "../template/home.html";
+    location.href = "../template/Cart.php";
     
 }
 
@@ -47,10 +47,14 @@ class UI{
             <article class = "product">
                 <div class = "img-container">
                     <img src = ${product.image} alt = "product" class = "product-img">
-                    <button class = "bag-btn" data-id = ${product.id}" onClick = "changePage(${product.page})">
-                        <i class = "fas fa-shopping-cart"></i>
-                        Order Now
-                    </button>
+                    <form action="../php/Cart.php" method="post">
+                      <input type="text" id="fname" name="fname" value="John"><br><br>
+                      <input type="text" name="product_id" id="product_id", value = ${product.id}>
+                      <button type="submit" class = "bag-btn" data-id = ${product.id}">
+                          <i class = "fas fa-shopping-cart"></i>
+                          Order Now
+                      </button>
+                    </form>
                 </div>
                 <h3>${product.title}</h3>
                 <h4>$${product.price}</h4>
