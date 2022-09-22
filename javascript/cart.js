@@ -6,7 +6,7 @@ const cartOverlay = document.querySelector('.close-overlay');
 const cartItems = document.querySelector('.close-items');
 const cartTotal = document.querySelector('.close-total');
 const cartContent = document.querySelector('.close-content');
-const productsDOM = document.querySelector('.products-center');
+const productsDOM = document.querySelector('.cart-center');
 
 // cart 
 let cart = [];
