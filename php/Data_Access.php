@@ -67,9 +67,7 @@ function getCustomerID($dbReturned, $username){
     $db = $dbReturned;
 
     $sql =<<<EOF
-        SELECT userID
-        FROM Customer
-        WHERE username = "$username";
+        SELECT userID FROM Customer WHERE username = "$username";
     EOF;
 
     $ret = $db->query($sql);
