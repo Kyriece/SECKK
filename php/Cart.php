@@ -37,22 +37,6 @@ include('Data_Access.php');
                 echo json_encode($jsonArray);
                 file_put_contents('cart.json', json_encode($jsonArray));
                 closeDB($db);
-                /*
-                $db = openDB();
-                $ret = getCartDetailsForUser($db, $curr_user, $product_id);
-            
-                while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
-                    $quantity = $row["Quantity"];
-                }
-                //echo $quantity;
-                closeDB($db);
-                
-
-                //Create cart.json  
-                
-                
-                fwrite($myfile, $user_id);
-                fclose($myfile);
 
                 header("Location: ../template/Cart.html", TRUE, 301);*/
             }else{
