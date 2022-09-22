@@ -49,7 +49,7 @@ class UI{
                             <p class="itemNumber">#QUE-007544-002</p>
                             <h3>Item Name 1</h3>
                           
-                             <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+                             <p> <input type="text"  class="qty" placeholder="3"/> x $1.00</p>
                           
                             <p class="stockStatus"> In Stock</p>
                         </div>  
