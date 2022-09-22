@@ -33,7 +33,7 @@ class Products{
 
 function changePage(id){
     console.log(id);
-    location.href = "/orderNow";
+    location.href = "../template/home.html";
     
 }
 

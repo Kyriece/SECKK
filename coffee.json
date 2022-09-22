@@ -1,10 +1,7 @@
 {
     "items": [
       {
-        "sys": { 
-          "id": "1",
-          "page":"../template/home.html"
-        },
+        "sys": { "id": "1" },
         "fields": {
           "title": "Copper Moon",
           "price": 20,
