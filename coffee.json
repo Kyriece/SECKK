@@ -9,7 +9,7 @@
         }
       },
       {
-        "sys": { "id": "2" },
+        "sys": { "id": 2 },
         "fields": {
           "title": "Eight O'Clock",
           "price": 12.99,
