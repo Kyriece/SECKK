@@ -112,11 +112,11 @@ function getCartDetailsForUser($dbReturned, $user_ID){
     return $ret;
 }
 
-function updateCartDetailsForCurrUser($curr_user ,$product_id, $quantity){
+function updateCartQuantity($curr_user ,$product_id, $quantity){
     //CartID is userID, will be deleted after each purchase
     $db = new SQLite3('../coffeedb.db');
-
-    $db->exec();
+    $quantity++;
+    $db->exec("UPDATE Cart SET Quatity = $quantity WHERE CartID = $curr_user, ProductID = $product_id");
     $db->close();
 }
 

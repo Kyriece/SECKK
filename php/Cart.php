@@ -9,6 +9,8 @@ include('Data_Access.php');
             $curr_user =  1;//fread($myfile,filesize("currentUser.txt"));
             fclose($myfile);
 
+            $product_id = $_POST['product_id'];
+
             $db = openDB();
             $ret = getCartDetailsForUser($db, $curr_user);
             $products = array();
@@ -18,11 +20,30 @@ include('Data_Access.php');
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
                     $products[$index] = $row["ProductID"];
                     $quantity[$index] = $row["Quantity"];
+                    if($products[$index] == $product_id){
+                        break;
+                    }
                     $index++;
                 }
-                
                 for ($x = 0; $x < $index; $x++) {
-                    echo $products[$x] . " " . $quantity[$x];
+                    echo $products[$x] . " " . $quantity[$x] . "\n";
+                }
+
+                updateCartQuantity($curr_user, $product_id, $quantity[$index]);
+                
+                
+                $ret = getCartDetailsForUser($db, $curr_user);
+                $index = 0;
+                while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
+                    $products[$index] = $row["ProductID"];
+                    $quantity[$index] = $row["Quantity"];
+                    if($products[$index] == $product_id){
+                        break;
+                    }
+                    $index++;
+                }
+                for ($x = 0; $x < $index; $x++) {
+                    echo $products[$x] . " " . $quantity[$x]. "\n";
                 }
 
             }else{
