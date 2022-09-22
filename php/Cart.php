@@ -40,7 +40,7 @@ include('Data_Access.php');
                     $quantity = $row["Quantity"];
                 }
                 //echo $quantity;
-                closeDB($db);*/
+                closeDB($db);
                 
 
                 //Create cart.json  
