@@ -29,7 +29,7 @@ include('Data_Access.php');
                 updateCartQuantity($curr_user, $product_id, $quantity);
 
                 $db = openDB();
-                $ret = getCartDetailsForUser($db, $curr_user, $product_id);
+                $ret = getAllCartDetails($db, $curr_user);
                 
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
                     $jsonArray[] = $row;
