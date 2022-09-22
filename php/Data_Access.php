@@ -106,7 +106,7 @@ function getProduct($dbReturned, $product_name){
 function getCartDetailsForUser($dbReturned, $user_ID, $product_id){
     $db = $dbReturned;
     $sql =<<<EOF
-      SELECT * FROM Cart WHERE CartID = $user_ID and ProductID = $producT_id;
+      SELECT * FROM Cart WHERE CartID = $user_ID and ProductID = $product_id
     EOF;
     $ret = $db->query($sql);
     return $ret;
