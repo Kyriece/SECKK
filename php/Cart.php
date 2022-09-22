@@ -10,7 +10,7 @@ include('Data_Access.php');
             fclose($myfile);
 
             $db = openDB();
-            $ret = getCartDetailsForUser($dbReturned, $curr_user);
+            $ret = getCartDetailsForUser($db, $curr_user);
             
             echo $curr_user;
         ?>
