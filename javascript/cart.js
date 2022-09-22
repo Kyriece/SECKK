@@ -38,7 +38,7 @@ class UI{
     displayProducts(products){
         let result = '';
         products.forEach(product => {
-            result += `${product.CartID} {product.Quantity} </br></br>`;
+            result += `${product.CartID} ${product.Quantity} </br></br>`;
             /*
             result += `
             <div class="cart">
