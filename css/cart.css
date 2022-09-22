@@ -16,3 +16,8 @@
     letter-spacing: 3px;
     text-transform: uppercase;
   }
+
+  .heading {
+    padding: 1em 0;
+    border-bottom: 1px solid #D0D0D0;
+  }
