@@ -48,8 +48,7 @@ class UI{
                 <div class = "img-container">
                     <img src = ${product.image} alt = "product" class = "product-img">
                     <form action="../php/Cart.php" method="post">
-                      <input type="text" id="fname" name="fname" value="John"><br><br>
-                      <input type="text" name="product_id" id="product_id", value = ${product.id}>
+                      <input type="hidden" name="product_id" id="product_id", value = ${product.id}>
                       <button type="submit" class = "bag-btn" data-id = ${product.id}">
                           <i class = "fas fa-shopping-cart"></i>
                           Order Now
