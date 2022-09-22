@@ -45,7 +45,7 @@ class UI{
                         <div class="infoWrap"> 
                             <div class="cartSection">
                                 <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-                                <p class="itemNumber">#QUE-007544-002</p>
+                                <p class="itemNumber">${product.ProductID}</p>
                                 <h3>Item Name 1</h3>
                                 
                                 <p> <input type="text"  class="qty" placeholder="3"/> x $1.00</p>
