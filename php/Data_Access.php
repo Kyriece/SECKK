@@ -63,6 +63,20 @@ function getCustomerPassword($dbReturned, $username){
     return $ret;
 }
 
+function getCustomerID($dbReturned, $username){
+    $db = $dbReturned;
+
+    $sql =<<<EOF
+        SELECT userID
+        FROM Customer
+        WHERE username = "$usename";
+    EOF;
+
+    $ret = $db->query($sql);
+
+    return $ret;
+}
+
 function getUserRole($dbReturned, $user_name){
     $db = $dbReturned;
 
@@ -86,6 +100,15 @@ function getProduct($dbReturned, $product_name){
     $db = $dbReturned;
     $sql =<<<EOF
       SELECT * FROM CUSTOMER WHERE productName = "$product_name";
+    EOF;
+    $ret = $db->query($sql);
+    return $ret;
+}
+
+function getCartDetailsForUser($dbReturned, $user_ID){
+    $db = $dbReturned;
+    $sql =<<<EOF
+      SELECT * FROM Cart WHERE CartID = "$user_ID";
     EOF;
     $ret = $db->query($sql);
     return $ret;

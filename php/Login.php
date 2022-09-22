@@ -21,14 +21,19 @@ include('rsa.php');
         $db = openDB();
         $ret = getCustomerPassword($db, $user_name);
         $ret2 = getUserRole($db, $user_name);
+        $ret3 = getCustomerID($dbReturned, $user_name);
         $userPass = "";
         $user_role = "";
+        $user_id = "";
         while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
             $userPass = $row['userPassword'];
         }
         while($row = $ret2->fetchArray(SQLITE3_ASSOC) ) {
             $user_role = $row['userRole'];
 
+        }
+        while($row = $ret2->fetchArray(SQLITE3_ASSOC)){
+            $user_id = $row['userID'];
         }
         //$time_stamp = $time_stamp + 3; -->Testing
         $time_diff = abs($server_time_stamp - $time_stamp);
@@ -37,7 +42,7 @@ include('rsa.php');
                 header("Location: ../template/home.html", TRUE, 301);
 
                 $myfile = fopen("currentUser.txt", "w") or die("Unable to open file!");
-                $txt = $user_name;
+                $txt = $user_id;
                 fwrite($myfile, $txt);
                 fclose($myfile);
 
@@ -46,7 +51,7 @@ include('rsa.php');
                 header("Location: ../template/ProductManagement.html", TRUE, 301);
 
                 $myfile = fopen("currentUser.txt", "w") or die("Unable to open file!");
-                $txt = $user_name;
+                $txt = $user_id;
                 fwrite($myfile, $txt);
                 fclose($myfile);
 
@@ -55,7 +60,7 @@ include('rsa.php');
                 header("Location: ../template/UserAdmin.html", TRUE, 301);
 
                 $myfile = fopen("currentUser.txt", "w") or die("Unable to open file!");
-                $txt = $user_name;
+                $txt = $user_id;
                 fwrite($myfile, $txt);
                 fclose($myfile);
 
