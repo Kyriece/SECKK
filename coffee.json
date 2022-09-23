@@ -20,7 +20,7 @@
         "sys": { "id": 3 },
         "fields": {
           "title": "Stumptons Hair Bender",
-          "price": 12.99,
+          "price": 13.99,
           "image": { "fields": { "file": { "url": "../images/hair.png" } } }
         }
       },

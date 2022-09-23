@@ -43,9 +43,23 @@ include('Data_Access.php');
                 file_put_contents('cart.json', json_encode($jsonArray));
                 closeDB($db);
 
-                //header("Location: ../template/Cart.html", TRUE, 301);
+                header("Location: ../template/Cart.html", TRUE, 301);
             }else{
-                echo "empty";
+                $quantity++;
+                insertNewItemToCart($curr_user ,$product_id, $quantity);
+
+                //Update Existing Cart from cart.json
+                $db = openDB();
+                $ret = getAllCartDetails($db, $curr_user);
+                
+                while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
+                    $jsonArray[] = $row;
+                }
+                echo json_encode($jsonArray);
+                file_put_contents('cart.json', json_encode($jsonArray));
+                closeDB($db);
+                
+                header("Location: ../template/Cart.html", TRUE, 301);
             }
            
             

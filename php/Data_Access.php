@@ -140,4 +140,10 @@ function checkIfProductExist($cartID, $productID){
     return $ret;
 }
 
+function insertNewItemToCart($curr_user ,$product_id, $quantity){
+    $db = new SQLite3('../coffeedb.db');
+    $db->exec("INSERT INTO Cart (CartID, ProductID, Quantity) VALUES ($curr_user ,$product_id, $quantity)");
+    $db->close();
+}
+
 ?>
