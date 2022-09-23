@@ -100,6 +100,12 @@ function addProduct($product_ID, $product_name, $product_quantity, $product_pric
     $db->close();
 }
 
+function removeProduct($product_ID){
+    $db = new SQLite3('../coffeedb.db');
+    $db->exec("DELETE FROM Catalog WHERE productID = $product_ID;");
+    $db->close();
+}
+
 function getProduct($dbReturned, $product_name){
     $db = $dbReturned;
     $sql =<<<EOF
