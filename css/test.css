@@ -4,9 +4,9 @@
   font-size: 1.5rem;
 }
 .cart-btn {
-  line-height: 12px;
   position:absolute;
   cursor: pointer;
+  margin-top: 60px;
 }
 
 /* --------------- Products ---------------- */
