@@ -2,8 +2,6 @@
 
 .nav-icon {
   font-size: 1.5rem;
-}
-.cart-btn { 
   line-height: 12px;
   width: 18px;
   font-size: 15pt;
@@ -13,6 +11,9 @@
   top:0;
   right:0;
   cursor: pointer;
+}
+.cart-btn { 
+  
 }
 
 /* --------------- Products ---------------- */
