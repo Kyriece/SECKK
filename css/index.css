@@ -60,6 +60,17 @@
   right:0;
 }
 
+.logout-button-div{
+  line-height: 12px;
+  width: 18px;
+  font-size: 15pt;
+  margin-top: 10px;
+  margin-right: 64px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
 .login-button{
   text-decoration: none;
 }
