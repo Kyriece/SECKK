@@ -94,6 +94,12 @@ function createNewUser($user_name, $user_password, $user_email, $user_first, $us
     $db->close();
 }
 
+function addProduct($product_ID, $product_name, $product_quantity, $product_price){
+    $db = new SQLite3('../coffeedb.db');
+    $db->exec("INSERT INTO Catalog (productID, productName, productQuantity, productPrice) VALUES ($product_ID, $product_name, $product_quantity, $product_price)");
+    $db->close();
+}
+
 function getProduct($dbReturned, $product_name){
     $db = $dbReturned;
     $sql =<<<EOF
