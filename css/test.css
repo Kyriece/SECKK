@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+
 .nav-icon {
   font-size: 1.5rem;
   line-height: 12px;
@@ -38,7 +47,7 @@
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   font-size: 1rem;
-  background: var(--primaryColor);
+  background: #5d3735;
   color: var(--mainBlack);
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
