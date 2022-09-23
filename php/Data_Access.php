@@ -161,4 +161,10 @@ function insertNewItemToCart($curr_user ,$product_id, $quantity){
     $db->close();
 }
 
+function clearUserCart($cartID){
+    $db = new SQLite3('../coffeedb.db');
+    $result = $db->exec("DELETE FROM Cart WHERE CartID = $cartID;");
+    $db->close();
+    return $result;
+}
 ?>
