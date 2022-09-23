@@ -48,14 +48,13 @@ class UI{
             <article class = "product">
                 <div class = "img-container">
                     <img src = ${product.image} alt = "product" class = "product-img">
-                    <!--<form action="../php/Cart.php" method="post">-->
+                    <form action="../php/Cart.php" method="post">
                       <input type="hidden" name="product_id" id="product_id", value = ${product.id}>
                       <button type="submit" class = "bag-btn">
                           <i class = "fas fa-shopping-cart"></i>
                           Order Now
                       </button>
-                      console.log(${product.id});
-                    <!--</form>-->
+                    </form>
                 </div>
                 <h3>${product.title}</h3>
                 <h4>$${product.price}</h4>

@@ -10,6 +10,7 @@ include('Data_Access.php');
             fclose($myfile);
 
             $product_id = $_POST['product_id'];
+            echo $product_id;
 
             $db = openDB();
             $ret = getCartDetailsForUser($db, $curr_user, $product_id);
@@ -38,7 +39,7 @@ include('Data_Access.php');
                 file_put_contents('cart.json', json_encode($jsonArray));
                 closeDB($db);
 
-                header("Location: ../template/Cart.html", TRUE, 301);
+                //header("Location: ../template/Cart.html", TRUE, 301);
             }else{
                 echo "empty";
             }
