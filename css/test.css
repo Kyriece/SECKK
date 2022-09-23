@@ -9,7 +9,7 @@
   margin-right: 65px;
   position:absolute;
   top:0;
-  right:0;
+  left:0;
   cursor: pointer;
 }
 .cart-btn { 
