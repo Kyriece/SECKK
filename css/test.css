@@ -89,6 +89,7 @@
 }
 .bag-btn {
   position: absolute;
+  color: #000080;
   top: 70%;
   right: 0;
   background: var(--primaryColor);
