@@ -18,13 +18,11 @@ include('Data_Access.php');
             $id = 0;
             while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
                 $id = $row["ProductID"];
-                $quantity = $row["Quantity"];
             }
-            echo $id . ' ' . $quantity;
-            /*
+            
             //If returned result is not empty, increment the cart quantity
             //for the respective product by 1
-            if($ret){
+            if($id > 0){
                 while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
                     $quantity = $row["Quantity"];
                 }
@@ -50,7 +48,7 @@ include('Data_Access.php');
                 echo "empty";
             }
            
-            */
+            
         ?>
     </body>
 </html>
