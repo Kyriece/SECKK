@@ -4,15 +4,13 @@
   font-size: 1.5rem;
   line-height: 12px;
   width: 18px;
-  font-size: 15pt;
+  font-size: 20pt;
   margin-top: 28px;
   margin-left: 25px;
   position:absolute;
   top:0;
   left:0;
   cursor: pointer;
-  height: 3em; 
-  width: 3em;
 }
 
 /* --------------- Products ---------------- */
