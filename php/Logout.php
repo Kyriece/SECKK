@@ -4,14 +4,24 @@ include('Data_Access.php');
 <html>
     <body>
         <?php
-            $myfile = fopen("currentUser.txt", "r") or die("Unable to open file!");
-            $curr_user = fread($myfile,filesize("currentUser.txt"));
-            fclose($myfile);
+            if (!file_exists('currentUser.txt')) {
+                $myfile = fopen("currentUser.txt", "r") or die("Unable to open file!");
+                $curr_user = fread($myfile,filesize("currentUser.txt"));
+                fclose($myfile);
+            }
 
             clearUserCart($curr_user);
 
-            unlink('cart.json');
-            unlink('currentUser.txt');
+            //If cart.json exists
+            if (!file_exists('cart.json')) {
+                unlink('cart.json');
+            }
+
+            //If currentUser.txt exist
+            if (!file_exists('currentUser.txt')) {
+                unlink('currentUser.txt');
+            }
+            
             header("Location: ../template/LoggedOut.html", TRUE, 200);
         ?>
     </body>
