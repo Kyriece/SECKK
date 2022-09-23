@@ -11,6 +11,7 @@ include('Data_Access.php');
         $product_price = $_POST["productPrice"];
         addProduct($product_ID, $product_name, $product_quantity, $product_price);
         header("Location: ../template/productAdded.html", TRUE, 200);
+        exit();
         ?>
     </body>
 </html>
