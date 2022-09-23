@@ -12,7 +12,7 @@ include('Data_Access.php');
 
             unlink('cart.json');
             unlink('currentUser.txt');
-            
+            header("Location: ../template/LoggedOut.html", TRUE, 200);
         ?>
     </body>
 </html>
