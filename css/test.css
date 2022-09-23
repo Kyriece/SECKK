@@ -48,7 +48,7 @@
   letter-spacing: var(--mainSpacing);
   font-size: 1rem;
   background: #5d3735;
-  color: var(--mainBlack);
+  color: white;
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
