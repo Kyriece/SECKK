@@ -55,7 +55,7 @@
 }
 .banner-btn:hover {
   background: transparent;
-  color: var(--primaryColor);
+  color: var(#5d3735);
 }
 /* --------------- End of Hero ---------------- */
 
