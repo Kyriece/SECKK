@@ -12,7 +12,7 @@
         "sys": { "id": 2 },
         "fields": {
           "title": "Eight O'Clock",
-          "price": 12.99,
+          "price": 15,
           "image": { "fields": { "file": { "url": "../images/eight.png" } } }
         }
       },
@@ -20,7 +20,7 @@
         "sys": { "id": 3 },
         "fields": {
           "title": "Stumptons Hair Bender",
-          "price": 13.99,
+          "price": 17,
           "image": { "fields": { "file": { "url": "../images/hair.png" } } }
         }
       },
@@ -28,7 +28,7 @@
         "sys": { "id": 4 },
         "fields": {
           "title": "Medium Roast",
-          "price": 12.99,
+          "price": 17,
           "image": { "fields": { "file": { "url": "../images/medium_roast.png" } } }
         }
       },
@@ -36,7 +36,7 @@
         "sys": { "id": 5 },
         "fields": {
           "title": "Pacific Rim",
-          "price": 12.99,
+          "price": 12,
           "image": { "fields": { "file": { "url": "../images/pacific.png" } } }
         }
       },
@@ -44,7 +44,7 @@
         "sys": { "id": 6 },
         "fields": {
           "title": "Philz Coffee",
-          "price": 12.99,
+          "price": 10,
           "image": { "fields": { "file": { "url": "../images/philz.png" } } }
         }
       },
@@ -52,7 +52,7 @@
         "sys": { "id": 7 },
         "fields": {
           "title": "Lavazza",
-          "price": 12.99,
+          "price": 31,
           "image": { "fields": { "file": { "url": "../images/Lavazza.jpg" } } }
         }
       },
@@ -60,7 +60,7 @@
         "sys": { "id": 8 },
         "fields": {
           "title": "Day Dreamer",
-          "price": 12.99,
+          "price": 12,
           "image": { "fields": { "file": { "url": "../images/Day_Dreamer.jpg" } } }
         }
       },
@@ -68,7 +68,7 @@
         "sys": { "id": 9 },
         "fields": {
           "title": "Moccona",
-          "price": 12.99,
+          "price": 16,
           "image": { "fields": { "file": { "url": "../images/Moccona.jpg" } } }
         }
       },
@@ -76,7 +76,7 @@
         "sys": { "id": 10 },
         "fields": {
           "title": "Grinders",
-          "price": 12.99,
+          "price": 18,
           "image": { "fields": { "file": { "url": "../images/Grinders.jpg" } } }
         }
       },
@@ -84,7 +84,7 @@
         "sys": { "id": 11 },
         "fields": {
           "title": "Harris",
-          "price": 12.99,
+          "price": 12,
           "image": { "fields": { "file": { "url": "../images/Harris.jpg" } } }
         }
       },
@@ -92,7 +92,7 @@
         "sys": { "id": 12 },
         "fields": {
           "title": "Primo",
-          "price": 12.99,
+          "price": 12,
           "image": { "fields": { "file": { "url": "../images/Primo.jpg" } } }
         }
       },
@@ -100,7 +100,7 @@
         "sys": { "id": 13 },
         "fields": {
           "title": "Remio",
-          "price": 12.99,
+          "price": 17,
           "image": { "fields": { "file": { "url": "../images/Remio.jpg" } } }
         }
       },
@@ -108,7 +108,7 @@
         "sys": { "id": 14 },
         "fields": {
           "title": "Shangri-La",
-          "price": 12.99,
+          "price": 30,
           "image": { "fields": { "file": { "url": "../images/Shangri-La.jpg" } } }
         }
       },
@@ -116,7 +116,7 @@
         "sys": { "id": 15 },
         "fields": {
           "title": "Agro Beans",
-          "price": 12.99,
+          "price": 17,
           "image": { "fields": { "file": { "url": "../images/Agro_Beans.jpg" } } }
         }
       },
@@ -124,7 +124,7 @@
         "sys": { "id": 16 },
         "fields": {
           "title": "illy",
-          "price": 12.99,
+          "price": 25,
           "image": { "fields": { "file": { "url": "../images/illy.jpg" } } }
         }
       },
@@ -132,7 +132,7 @@
         "sys": { "id": 17 },
         "fields": {
           "title": "Monkey Business",
-          "price": 12.99,
+          "price": 25,
           "image": { "fields": { "file": { "url": "../images/Monkey_Business.jpg" } } }
         }
       },
@@ -140,7 +140,7 @@
         "sys": { "id": 18 },
         "fields": {
           "title": "Map Coffee",
-          "price": 12.99,
+          "price": 19,
           "image": { "fields": { "file": { "url": "../images/Map_Coffee.jpg" } } }
         }
       },
@@ -148,7 +148,7 @@
         "sys": { "id": 19 },
         "fields": {
           "title": "Gravity",
-          "price": 12.99,
+          "price": 21,
           "image": { "fields": { "file": { "url": "../images/Gravity.jpg" } } }
         }
       },
@@ -156,7 +156,7 @@
         "sys": { "id": 20 },
         "fields": {
           "title": "Byron Bay",
-          "price": 12.99,
+          "price": 22,
           "image": { "fields": { "file": { "url": "../images/Byron_Bay.jpg" } } }
         }
       }
