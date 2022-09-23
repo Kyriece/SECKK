@@ -10,12 +10,17 @@ include('Data_Access.php');
             fclose($myfile);
 
             $product_id = $_POST['product_id'];
-            echo $product_id;
 
             $db = openDB();
             $ret = getCartDetailsForUser($db, $curr_user, $product_id);
             $quantity = 0;
-            
+
+            $id = 0;
+            while($row = $ret->fetchArray(SQLITE3_ASSOC) ) {
+                $id = $row["ProductID"];
+            }
+            echo $id;
+            /*
             //If returned result is not empty, increment the cart quantity
             //for the respective product by 1
             if($ret){
@@ -44,7 +49,7 @@ include('Data_Access.php');
                 echo "empty";
             }
            
-            
+            */
         ?>
     </body>
 </html>
