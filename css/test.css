@@ -11,8 +11,9 @@
   top:0;
   left:0;
   cursor: pointer;
+  height: 3em; 
+  width: 3em;
 }
-\
 
 /* --------------- Products ---------------- */
 
