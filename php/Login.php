@@ -39,28 +39,28 @@ include('rsa.php');
         $time_diff = abs($server_time_stamp - $time_stamp);
         if($time_diff < 150){
             if($hashed_password == $userPass && $user_role == 'user'){
-                header("Location: ../template/home.html", TRUE, 301);
+                
                 $myfile = fopen("currentUser.txt", "w") or die("Unable to open file!");
                 fwrite($myfile, $user_id);
                 fclose($myfile);
-
+                header("Location: ../template/home.html", TRUE, 301);
                 exit();
             }else if($hashed_password == $userPass && $user_role == 'productAdmin'){
-                header("Location: ../template/ProductManagement.html", TRUE, 301);
+                
 
                 $myfile = fopen("currentUser.txt", "w") or die("Unable to open file!");
                 $txt = $user_id;
                 fwrite($myfile, $user_id);
                 fclose($myfile);
-
+                header("Location: ../template/ProductManagement.html", TRUE, 301);
                 exit();
             }else if($hashed_password == $userPass && $user_role == 'userAdmin'){
-                header("Location: ../template/UserAdmin.html", TRUE, 301);
+                
                 $myfile = fopen("currentUser.txt", "w") or die("Unable to open file!");
                 $txt = $user_id;
                 fwrite($myfile, $user_id);
                 fclose($myfile);
-
+                header("Location: ../template/UserAdmin.html", TRUE, 301);
                 exit();
             }else{
                 header("Location: ../template/LoginFail.html", TRUE, 301);
