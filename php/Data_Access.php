@@ -90,20 +90,23 @@ function getUserRole($dbReturned, $user_name){
 function createNewUser($user_name, $user_password, $user_email, $user_first, $user_last, $user_phone, $user_role){
     $db = new SQLite3('../coffeedb.db');
     
-    $db->exec("INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber, userRole) VALUES ('$user_name', '$user_email', '$user_first', '$user_last', '$user_password', '$user_phone','$user_role')");
+    $result =  $db->exec("INSERT INTO Customer (userName, userEmail, userFirstName, userLastName, userPassword, userPhoneNumber, userRole) VALUES ('$user_name', '$user_email', '$user_first', '$user_last', '$user_password', '$user_phone','$user_role')");
     $db->close();
+    return $result;
 }
 
 function addProduct($product_ID, $product_name, $product_quantity, $product_price){
     $db = new SQLite3('../coffeedb.db');
-    $db->exec("INSERT INTO Catalog (productID, productName, productQuantity, productPrice) VALUES ($product_ID, '$product_name', $product_quantity, $product_price)");
+    $result = $db->exec("INSERT INTO Catalog (productID, productName, productQuantity, productPrice) VALUES ($product_ID, '$product_name', $product_quantity, $product_price)");
     $db->close();
+    return $result;
 }
 
 function removeProduct($product_ID){
     $db = new SQLite3('../coffeedb.db');
-    $db->exec("DELETE FROM Catalog WHERE productID = $product_ID;");
+    $result = $db->exec("DELETE FROM Catalog WHERE productID = $product_ID;");
     $db->close();
+    return $result;
 }
 
 function getProduct($dbReturned, $product_name){

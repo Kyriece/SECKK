@@ -6,7 +6,7 @@ include('Data_Access.php');
         <?php
 
             $myfile = fopen("currentUser.txt", "r") or die("Unable to open file!");
-            $curr_user =  1;//fread($myfile,filesize("currentUser.txt"));
+            $curr_user =  fread($myfile,filesize("currentUser.txt"));
             fclose($myfile);
 
             $product_id = $_POST['product_id'];
