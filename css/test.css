@@ -2,6 +2,8 @@
 
 .nav-icon {
   font-size: 1.5rem;
+}
+.cart-btn {
   cursor: pointer;
 }
 
