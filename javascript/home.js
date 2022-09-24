@@ -16,6 +16,7 @@ class UI{
 document.addEventListener("DOMContentLoaded", ()=>{
     // Open a log file
     var file = new File("../php/currentUser.txt");
+    console.log(file.exists());
     if(file.exists()){
         const ui = new UI();
         ui.displayProducts();
