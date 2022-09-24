@@ -11,8 +11,10 @@ include('des.php');
 
             $inp = file_get_contents('message.json');
             $tempArray = json_decode($inp);
-            echo $tempArray;
             array_push($tempArray, $recovered_message);
+
+            echo $tempArray[0];
+
             $jsonData = json_encode($tempArray);
             file_put_contents('message.json', $jsonData);
         ?>
