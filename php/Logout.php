@@ -21,7 +21,7 @@ include('Data_Access.php');
                 unlink('currentUser.txt');
             }
             
-            header("Location: ../template/LoggedOut.php");
+            header("Location: ../php/LoggedOut.php");
         ?>
     </body>
 </html>
