@@ -8,15 +8,13 @@ include('des.php');
 	        $key = "des";
             
             $recovered_message = php_des_decryption($key, $message);
+            //echo "Received encrypted Message: " . $recovered_message . "<br/><br/>"; 
 
-            $inp = file_get_contents('message.json');
-            $tempArray = json_decode($inp);
-            array_push($tempArray, $recovered_message);
-
-            echo $tempArray[0];
-
-            $jsonData = json_encode($tempArray);
-            file_put_contents('message.json', $jsonData);
+            $fp = fopen('message.txt', 'a');//opens file in append mode  
+            fwrite($fp, $recovered_message);  
+            fclose($fp);  
+            
+            echo "File appended successfully";  
         ?>
     <body>
 </html>
