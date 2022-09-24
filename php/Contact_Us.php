@@ -9,11 +9,11 @@ include('des.php');
             
             $recovered_message = php_des_decryption($key, $message);
 
-            $inp = file_get_contents('message.json');
-            $tempArray = json_decode($inp);
-            array_push($tempArray, $recovered_message);
-            $jsonData = json_encode($tempArray);
-            file_put_contents('message.json', $jsonData);
+            $fp = fopen('message.txt', 'a');//opens file in append mode  
+            fwrite($fp, $recovered_message);  
+            fclose($fp);  
+            
+            echo "message sent";  
         ?>
     <body>
 </html>
