@@ -13,10 +13,8 @@ include('des.php');
 
         //Decrypt DES first
         $des_key = "DES_KEY";
-        echo $recovered_message;
-        echo "\n";
-        echo "\n";
-        echo "\n";
+        echo $encrypted_user_password ;
+        echo "\n\n";
         $recovered_message = php_des_decryption($des_key, $encrypted_user_password);
         echo $recovered_message;
         /*
