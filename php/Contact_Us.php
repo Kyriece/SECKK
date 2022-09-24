@@ -11,7 +11,7 @@ include('des.php');
             //echo "Received encrypted Message: " . $recovered_message . "<br/><br/>"; 
 
             $fp = fopen('message.txt', 'a');//opens file in append mode  
-            fwrite($fp, $recovered_message.concat("\n"));  
+            fwrite($fp, $recovered_message);  
             fclose($fp);  
             
             echo "File appended successfully";  

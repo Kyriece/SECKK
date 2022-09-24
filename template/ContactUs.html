@@ -77,7 +77,7 @@
             function DES_encryption() {
                 var userEmail = document.getElementById("userEmail").value;
                 var message = document.getElementById("message").value;
-                var fullMessage = userEmail.concat(": ", message);
+                var fullMessage = userEmail.concat(": ", message, '\n');
                 var key = document.getElementById("key").value;
 
                 // javascript des encryption api
