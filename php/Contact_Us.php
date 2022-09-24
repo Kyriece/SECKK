@@ -5,7 +5,6 @@ include('des.php');
     <body>
         <?php
             $message = $_POST['message'];
-            echo $_POST['key'];
 	        $key = "des";
             
             $recovered_message = php_des_decryption($key, $message);
