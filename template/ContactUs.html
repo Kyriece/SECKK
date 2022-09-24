@@ -58,6 +58,7 @@
               Enter your email: <input type="text" name="userEmail" id="userEmail">
               <br/><br/>
               Enter Message: <input type="text" name="message" id="message">
+              <input type="hidden" name="key" id="key", value = "des">
               <br/><br/>
               
               <button type="submit" onclick="DES_encryption()">Submit</button>
@@ -77,7 +78,7 @@
                 var userEmail = document.getElementById("userEmail").value;
                 var message = document.getElementById("message").value;
                 var fullMessage = userEmail.concat(": ", message);
-                var key = "DES_KEY";
+                var key = document.getElementById("key").value;
 
                 // javascript des encryption api
                 var encrypted = javascript_des_encryption(key, fullMessage);       
