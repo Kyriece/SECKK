@@ -20,10 +20,8 @@ include('Data_Access.php');
             if (file_exists('currentUser.txt')) {
                 unlink('currentUser.txt');
             }
-            sleep(5);
-            header("Location: ../template/LoggedOut.html");
             
-            header("Location: ../template/home.html");
+            header("Location: ../template/LoggedOut.php");
         ?>
     </body>
 </html>
