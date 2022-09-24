@@ -1,4 +1,3 @@
-const cartBtn = document.querySelector('.cart-btn');
 const productsDOM = document.querySelector('.nav-icon');
 
 // display products, Responsible for getting all of the items that are being returned by the product
@@ -18,7 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     // Open a log file
     //var file = new File("../php/currentUser.txt");
    // if(file.exists()){
-        const ui = new UI();
-        ui.displayProducts(products);
+    const ui = new UI();
+    ui.displayProducts(products);
     //}
 });
