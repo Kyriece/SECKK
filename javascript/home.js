@@ -11,7 +11,7 @@ class UI{
         productsDOM.innerHTML = result; 
     }
     
-}
+} 
 
 document.addEventListener("DOMContentLoaded", ()=>{
     // Open a log file
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
      //   ui.displayProducts();
    // }
 
-   //if(system.functions.isfileexist("../php/currentUser.txt")){
+   if(){
         const ui = new UI();
         ui.displayProducts();
   // }
