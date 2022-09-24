@@ -22,6 +22,8 @@ include('Data_Access.php');
             }
             
             header("Location: ../template/LoggedOut.html");
+            sleep(5);
+            header("Location: ../template/home.html");
         ?>
     </body>
 </html>
