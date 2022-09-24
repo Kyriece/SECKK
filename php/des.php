@@ -234,10 +234,10 @@ function hexToString ($h) {
 
 ////////////////////////////// custom API //////////////////////////////
 function php_des_encryption($key, $message){
-    return stringToHex(des (hash('sha256',$key), $message, 1));
+    return stringToHex(des ($key, $message, 1));
 }
 function php_des_decryption($key, $ciphertext){
-    return des (hash('sha256',$key), hexToString($ciphertext), 0);
+    return des ($key, hexToString($ciphertext), 0);
 }
 
 
