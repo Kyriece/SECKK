@@ -12,15 +12,15 @@ include('des.php');
         $encrypted_user_password = $_POST['userPassword'];
 
         //Decrypt DES first
-        $des_key = "DES_KEY";
-        echo $encrypted_user_password ;
-        echo "\n\n";
-        $recovered_message = php_des_decryption($des_key, $encrypted_user_password);
-        echo $recovered_message;
-        /*
+        //$des_key = "DES_KEY";
+        //echo $encrypted_user_password ;
+        //echo "\n\n";
+        //$recovered_message = php_des_decryption($des_key, $encrypted_user_password);
+        //echo $recovered_message;
+        
         //Decrypt password
         $privateKey = get_rsa_privatekey('private.key');
-        $decrypted = rsa_decryption($recovered_message, $privateKey);
+        $decrypted = rsa_decryption($encrypted_user_password, $privateKey);
         $split_value = explode("&", $decrypted);
         $hashed_password = $split_value[0];
         $time_stamp = $split_value[1];
@@ -78,7 +78,7 @@ include('des.php');
             echo "SECURITY ISSUE!";
         }
 
-        closeDB($db);*/ 
+        closeDB($db);
         ?>
     </body>
 </html>
