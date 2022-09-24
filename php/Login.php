@@ -13,7 +13,7 @@ include('des.php');
 
         //Decrypt DES first
         $des_key = "DES_KEY";
-        $recovered_message = php_des_decryption($key, $encrypted_user_password);
+        $recovered_message = php_des_decryption($des_key, $encrypted_user_password);
 
         //Decrypt password
         $privateKey = get_rsa_privatekey('private.key');
