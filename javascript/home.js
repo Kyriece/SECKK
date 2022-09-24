@@ -15,7 +15,7 @@ class UI{
 
 document.addEventListener("DOMContentLoaded", ()=>{
     // Open a log file
-    var file = new File("../php/cart.json");
+    var file = new File("../php/currentUser.txt");
     if(file.exists()){
         const ui = new UI();
         ui.displayProducts(products);
