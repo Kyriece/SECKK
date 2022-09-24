@@ -16,6 +16,7 @@ include('des.php');
         echo $recovered_message;
         echo "\n";
         echo "\n";
+        echo "\n";
         $recovered_message = php_des_decryption($des_key, $encrypted_user_password);
         echo $recovered_message;
         /*
