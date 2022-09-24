@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     //var file = new File("../php/currentUser.txt");
    // if(file.exists()){
     const ui = new UI();
-    ui.displayProducts(products);
+    ui.displayProducts();
     //}
 });
