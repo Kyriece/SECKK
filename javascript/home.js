@@ -1,3 +1,4 @@
+
 const productsDOM = document.querySelector('.nav-icon');
 
 // display products, Responsible for getting all of the items that are being returned by the product
