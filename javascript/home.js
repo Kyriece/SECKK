@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
      //   ui.displayProducts();
    // }
 
-   if(system.functions.isfileexist("../php/currentUser.txt")){
+   //if(system.functions.isfileexist("../php/currentUser.txt")){
         const ui = new UI();
         ui.displayProducts();
-   }
+  // }
 
 });
