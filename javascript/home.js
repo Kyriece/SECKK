@@ -1,4 +1,4 @@
-const productsDOM = document.querySelector('.addCart');
+const productsDOM = document.querySelector('.nav-icon');
 
 // display products, Responsible for getting all of the items that are being returned by the product
 class UI{
@@ -6,7 +6,7 @@ class UI{
         let result = '';
   
         result += `
-            <div class = "cart-center"></div>
+            <a href = "../php/Cart.php"><i class = "fas fa-cart-plus"></i></a>
             `;
         productsDOM.innerHTML = result; 
     }
