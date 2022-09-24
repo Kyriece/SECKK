@@ -14,7 +14,8 @@ include('des.php');
         //Decrypt DES first
         $des_key = "DES_KEY";
         $recovered_message = php_des_decryption($des_key, $encrypted_user_password);
-
+        echo $recovered_message;
+        /*
         //Decrypt password
         $privateKey = get_rsa_privatekey('private.key');
         $decrypted = rsa_decryption($recovered_message, $privateKey);
@@ -75,7 +76,7 @@ include('des.php');
             echo "SECURITY ISSUE!";
         }
 
-        closeDB($db);
+        closeDB($db);*/ 
         ?>
     </body>
 </html>
