@@ -1,6 +1,7 @@
 <?php
 include('Data_Access.php');
 include('rsa.php');
+include('des.php');
 ?>
 
 <html>
@@ -10,9 +11,13 @@ include('rsa.php');
         $user_name = $_POST['username'];
         $encrypted_user_password = $_POST['userPassword'];
 
+        //Decrypt DES first
+        $des_key = "DES_KEY";
+        $recovered_message = php_des_decryption($key, $encrypted_user_password);
+
         //Decrypt password
         $privateKey = get_rsa_privatekey('private.key');
-        $decrypted = rsa_decryption($encrypted_user_password, $privateKey);
+        $decrypted = rsa_decryption($recovered_message, $privateKey);
         $split_value = explode("&", $decrypted);
         $hashed_password = $split_value[0];
         $time_stamp = $split_value[1];
