@@ -5,16 +5,11 @@
     <meta name = "description" content = "Exppresso, an e-commerce site that sells coffee beans">
     <meta name = "author" content = "Kai Run Leong (S3862092), Kyriece(enter student number)">
     <meta name = "keywords" content = "Coffee beans, e-commerce, Expresso">
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-=======
     <meta name = "viewport" content = "width=device_width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/cart.css">
->>>>>>> refs/remotes/origin/main
+    <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <script src="https://kit.fontawesome.com/20da3da519.js" crossorigin="anonymous"></script>
     <style>
       body,html{
         margin: 0;
@@ -29,6 +24,9 @@
   </head>
 
   <body>
+    <span class = "nav-icon">
+      <a href = "../php/Cart.php"><i class = "fas fa-cart-plus"></i></a>
+    </span>
     <div>
       <div class = div-logo>
         <a href = "home.html">
@@ -41,12 +39,10 @@
       <div class = register-button-div>
         <a href = "Register.html" class = login-button>Register</a>
       </div>
-<<<<<<< HEAD
-=======
       <div class = logout-button-div>
         <a href = "../php/Logout.php" class = login-button>Logout</a>
       </div>
->>>>>>> refs/remotes/origin/main
+
 
     </div>
     <div class = "grid-container">
@@ -66,7 +62,6 @@
 
     <!--NAVIGATION BAR-->
 
-<<<<<<< HEAD
     <section class ="cart">
         <div class="box-container">
             <table>
@@ -75,129 +70,71 @@
                     <th>Quantity</th>
                     <th>Subtotal</th>
                 </tr>
+                
                 <tr>
-                    <td>Product name</td>
+                    <td>
+                      <div class = "cart-info">
+                        <img src="../images/Agro_Beans.jpg">
+                        <div>
+                          <p>Product Name</p>
+                          <small> Price: $30</small><br><br>
+                          <a href="#">Remove</a>
+                        </div>
+                      </div>
+                    </td>
                     <td><input type="number" value="1"></td>
                     <td>$30.00</td>
                 </tr>
+
+                <tr>
+                  <td>
+                    <div class = "cart-info">
+                      <img src="../images/Agro_Beans.jpg">
+                      <div>
+                        <p>Product Name</p>
+                        <small> Price: $30</small><br><br>
+                        <a href="#">Remove</a>
+                      </div>
+                    </div>
+                  </td>
+                  <td><input type="number" value="1"></td>
+                  <td>$30.00</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class = "cart-info">
+                    <img src="../images/Agro_Beans.jpg">
+                    <div>
+                      <p>Product Name</p>
+                      <small> Price: $30</small><br><br>
+                      <a href="#">Remove</a>
+                    </div>
+                  </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>$30.00</td>
+            </tr>
+                
             </table>
         </div>
+        <div class="total">
+          <table>
+            <tr>
+              <td>Total</td>
+              <td>$90.00</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" style="padding-right: 10px;">Confirm Purchase</a>
+              </td>
+            </tr>
+          </table>
+        </div>
     </section>
+
     <!--Cart-->
 
-    <section class="catalogue">
-      <div class="box-container">
-    
-        <div class="box">
-            <i class="fas fa-times"></i>
-            <img src="../images/copper.png" alt="">
-            <div class="content">
-                <h3>smartphone</h3>
-                <form action="">
-                    <span>quantity : </span>
-                    <input type="number" name="" value="1" id="">
-                </form>
-                <div class="price">$249.99 <span>$399.99</span></div>
-            </div>
-        </div>
-    
-        <a href="#" class="box">
-          <img src="../images/eight.png" alt="">
-          <div class="content">
-            <h1>EIGHT O'CLOCK</h1>
-            <div class="price">$30</div>
-            <p> DESCRIPTION</p>
-          </div>
-        </a>
-    
-        <a href="#" class="box">
-          <img src="../images/hair.png" alt="">
-          <div class="content">
-            <h1>STUMPTONS HAIR BENDER</h1>
-            <div class="price">$30</div>
-            <p> DESCRIPTION</p>
-          </div>
-        </a>
-    
-        <a href="#" class="box">
-          <img src="../images/medium_roast.png" alt="">
-          <div class="content">
-            <h1>MEDIUM ROAST</h1>
-            <div class="price">$30</div>
-            <p> DESCRIPTION</p>
-          </div>
-        </a>
-    
-        <a href="#" class="box">
-          <img src="../images/pacific.png" alt="">
-          <div class="content">
-            <h1>PACIFIC RIM</h1>
-            <div class="price">$30</div>
-            <p> DESCRIPTION</p>
-          </div>
-        </a>
-    
-        <a href="#" class="box">
-          <img src="../images/philz.png" alt="">
-          <div class="content">
-            <h1>PHILZ COFFEE</h1>
-            <div class="price">$30</div>
-            <p> DESCRIPTION</p>
-          </div>
-        </a>
-    
-      </div>
-    </section>
 </body>
 
 </html>
-=======
-    <div class="wrap cf">
-        <h1 class="projTitle">Shopping Cart</h1>
-        <div class="heading cf">
-            <h1>My Cart</h1>
-            <!--<a href="../template/Products.html" class="continue">Continue Shopping</a>-->
-            <a href="../template/Checkout.html" class="continue">Checkout</a>
-        </div>
-        <div class="cart">
-            <ul class="cartWrap">
-                <div class = "cart-center"></div>
-            </ul>
-        </div>
-        
-    </div>   
-    <script src = "../javascript/cart.js"></script>
-  </body>
-
-</html>
-
-<!--
-
-<div class="cart">
-            <ul class="cartWrap">
-                <li class="items odd">
-                    <div class="infoWrap"> 
-                        <div class="cartSection">
-                            <img src="http://lorempixel.com/output/technics-q-c-300-300-4.jpg" alt="" class="itemImg" />
-                            <p class="itemNumber">#QUE-007544-002</p>
-                            <h3>Item Name 1</h3>
-                          
-                             <p> <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
-                          
-                            <p class="stockStatus"> In Stock</p>
-                        </div>  
-                      
-                          
-                        <div class="prodTotal cartSection">
-                            <p>$15.00</p>
-                         </div>
-                        <div class="cartSection removeWrap">
-                            <a href="#" class="remove">x</a>
-                        </div>  
-                    </div>
-                </li>
-            </ul>
-        </div>
-
--->
->>>>>>> refs/remotes/origin/main

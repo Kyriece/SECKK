@@ -171,7 +171,6 @@
   left: 40%;
 }
 
-<<<<<<< HEAD
 .card-wrapper{
   max-width: 1100px;
   margin: 0 auto;
@@ -248,16 +247,99 @@
 }
 
 .cart .box-container{
-  margin: 6rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .cart .box-container table{
   width: 100%;
   border-collapse: collapse;
+  border-bottom: 2rem solid  #5d3735;
+  /* text-align: center; */
+}
+.cart .box-container td img{
+  height: 150px;
+  width: 110px;
+  margin-right: 20px;
 }
 
-=======
->>>>>>> refs/remotes/origin/main
+.cart .box-container th{
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding: 10px;
+  color: #ddd;
+  background-color: #5d3735;
+  font-weight: 100;
+}
+
+.cart .box-container th:last-child{
+  text-align: right;
+  padding-right: 2rem;
+
+}
+
+.cart .box-container td{
+  padding: 10px 5px;
+}
+
+.cart .box-container td:last-child{
+  padding-right: 2rem;
+  text-align: right;
+}
+
+.cart .box-container td a{
+  padding: 10px 5px;
+  margin-left: -6px;
+}
+
+.cart .box-container td input{
+  padding: 10px 5px;
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+.cart .box-container .cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart .total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.cart .total table{
+  border-top: 10px solid #5d3735;
+  width: 100%;
+  max-width: 20rem;
+  border-collapse: collapse;
+}
+
+.cart .total th{
+  text-align: right;
+}
+
+.cart .total td{
+  padding: 10px 5px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.cart .total td:last-child{
+  padding-right: 2rem;
+  text-align: right;
+}
+
+.cart .total a{
+  text-align: center;
+}
+
 .about-section {
   padding: 50px;
   text-align: center;
