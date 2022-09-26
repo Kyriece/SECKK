@@ -7,7 +7,10 @@
         <meta name = "keywords" content = "Coffee beans, e-commerce, Expresso">
         <meta name = "viewport" content = "width=device_width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/index.css">
+       <!-- <link rel="stylesheet" href="../css/product.css"> -->
+        <link rel="stylesheet" href="../css/test.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <script src="https://kit.fontawesome.com/20da3da519.js" crossorigin="anonymous"></script>
         <style>
         body,html{
             height: 100%;
@@ -16,6 +19,9 @@
         </style>
     </head>
     <body>
+        <span class = "nav-icon">
+         <a href = "../php/Cart.php"><i class = "fas fa-cart-plus"></i></a>
+        </span>
         <div>
             <div class = div-logo>
               <a href = "home.html">
@@ -28,8 +34,11 @@
             <div class = register-button-div>
               <a href = "Register.html" class = login-button>Register</a>
             </div>
-      
+            <div class = logout-button-div>
+              <a href = "../php/Logout.php" class = login-button>Logout</a>
+            </div>
           </div>
+          
           <div class = "grid-container">
             <div>
               <a href = "home.html" class = "top_button">Home</a>
@@ -40,34 +49,24 @@
             <div>
               <a href = "Products.html" class = "top_button">Product</a>
             </div>
+            <div>
+              <a href = "ContactUs.html" class = "top_button">Contact Us</a>
+            </div>
           </div>
         
         <!--NAVIGATION BAR-->
+        
 
-        <div class = "card-wrapper">
-            <div class = "card">
-              <!-- card left -->
-              <div class = "product-imgs">
-                <img src="../images/copper.png" alt="">
-              </div>
-              <!-- card right -->
-              <div class = "product-content">
-                <h2 class = "product-title">Copper Moon</h2>
-                <div class = "product-price">
-                  <p>Price: <span>$30</span></p>
-                </div>
-      
-                <div class = "product-detail">
-                  <h2>about this item: </h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
-                </div>
-      
-                <div class = "purchase-info">
-                  <input type = "number" min = "0" value = "1">
-                  <button type = "button" class = "btn">
-                    Add to Cart <i class = "fas fa-shopping-cart"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
+        <!-- products -->
+        <section class="products">
+          <div class="section-title">
+              <h2> Our Products</h2>
           </div>
+          <div class = "products-center"></div>
+        </section> 
+        <script src = "../javascript/product.js"></script>
+        <!-- end of products-->
+
+          </div>
+    </body> 
+</html>
