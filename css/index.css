@@ -94,6 +94,7 @@
   transform: translate(-50%, -50%);
   font-size: 50px;
   color: white;
+  max-height: 300px;
 }
 
 .catalogue {
@@ -125,6 +126,15 @@
   overflow: hidden;
 }
 
+.catalogue .box-container .box .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+  color: #666;
+  cursor: pointer;
+}
+
 .catalogue .box-container .box .content h3 {
   font-size: 2rem;
   color: #333;
@@ -137,7 +147,7 @@
   padding-bottom: .7rem;
 }
 
-.catalogue .box-container .box .image{
+.catalogue .box-container .box img{
   height: 20rem;
   max-width: inherit;
   max-height: inherit;
@@ -223,6 +233,15 @@
 }
 .purchase-info .btn:hover{
   opacity: 0.9;
+}
+
+.cart .box-container{
+  margin: 6rem;
+}
+
+.cart .box-container table{
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .about-section {

@@ -7,6 +7,7 @@
     <meta name = "keywords" content = "Coffee beans, e-commerce, Expresso">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <style>
       body,html{
@@ -47,34 +48,45 @@
         <a href = "Products.html" class = "top_button">Product</a>
       </div>
       <div>
-        <a href = "Cart.html" class = "top_button">Contact Us</a>
+        <a href = "ContactUs.html" class = "top_button">Contact Us</a>
       </div>
     </div>
 
     <!--NAVIGATION BAR-->
 
-    <section class="home">
-      <div class="centered"> 
-        <h1>SECKK'S COFFEE</h1> 
-        <p>We are a family owned coffee shop with the goal of delivering the best coffee available globally</p>
-      </div>
-      <img src="../images/home.png" alt="" class="home-image">
+    <section class ="cart">
+        <div class="box-container">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>Product name</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$30.00</td>
+                </tr>
+            </table>
+        </div>
     </section>
-
-    <!--PRODUCTS-->
+    <!--Cart-->
 
     <section class="catalogue">
       <div class="box-container">
     
-        <a href="#" class="box">
-          <img src="../images/copper.png" alt="">
-          <div class="content">
-            <h1>COPPER MOON</h1>
-            <div class="price">$30</div>
-            <p> A GENERAL DESCRIPTION WILL BE HELD HERE AND THIS IS VERY LONG TO ENSURE THAT THE WEBSITE IS CAPABLE OF
-              SUITING LONG DESCRIPTIONS</p>
-          </div>
-        </a>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="../images/copper.png" alt="">
+            <div class="content">
+                <h3>smartphone</h3>
+                <form action="">
+                    <span>quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                </form>
+                <div class="price">$249.99 <span>$399.99</span></div>
+            </div>
+        </div>
     
         <a href="#" class="box">
           <img src="../images/eight.png" alt="">
@@ -123,6 +135,6 @@
     
       </div>
     </section>
-    </body>
-    
-    </html>
+</body>
+
+</html>
